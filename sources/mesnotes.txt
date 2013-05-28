@@ -1,0 +1,24 @@
+Polices: 
+
+H1-6 = Abel Regular
+Paragraphs = Open Sans
+Footer ent!èrement = Abel
+sous-titres "je veux savoir +" = Abel
+
+Couleurs Police
+Noir = #111
+gris = #6d6e71
+
+Couleurs principales champs: 
+#fff
+#acc92f
+
+Couleurs champs & border
+#e2e2e2
+
+
+Identité du site:
+CMS, sous inscription une boutique de loisir culturels
+
+Comités d'entreprise
+Particulier
