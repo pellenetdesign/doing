@@ -22,3 +22,6 @@ CMS, sous inscription une boutique de loisir culturels
 
 Comités d'entreprise
 Particulier
+
+container max-width:1000px
+Dev pour 1280px

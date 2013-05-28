@@ -50,19 +50,27 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <!--[if lt IE 8]>
           <script src="less/typo/font-awesome/css/font-awesome-ie7.css"></script>
-         <![endif]-->      
-		<link rel=”shortcut icon” href=”favicon.ico”>
+         <![endif]     
+		<link rel=”shortcut icon” href=”favicon.ico”>--> 
         <script src="js/distributions/modernizr.custom.full.min.js"></script>
     	</head>
 		<body>
-			<div id="carapace">
+			<div id="wrap">
 				<header>
 				</header>
-				<section>
+				<section id="principale">
 				</section>
+                <section id="secondaire">
+				</section>
+                <section id="troisieme">
+				</section>
+                <nav>
+                </nav>
+                <aside>
+                </aside>
 				<footer>
 				</footer>
-			</div><!--fin carapace-->
+			</div><!--fin wrap-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script>window.jQuery || document.write('<script src="js/distributions/jquery-1.10.0.min.js"><\/script>')</script>
 		<script src="js/plugs/bootstrap.min.js"></script>
