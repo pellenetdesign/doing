@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="publisher" content="Doing.fr"/>
-		<meta name="Keywords" lang="en-us" content=""jarl helin, recherche un emploi, musicien, graphique et web design, entrepreneur, Rhone Alpes, Grenoble, Lyon, Valence, Romans sur Isere, trilingue, anglais, suedois, francais, flash, cinema 4d, curriculume vitae, cv,  multi platforme, compatible, compatibilite"Travail fictif"/>
+		<meta name="Keywords" lang="fr-fr" content="Travail fictif, alices, doing"/>
 		<meta name="robots" content="index, no-follow"/>
 		<meta name="revisit-after" content="7 days"/>
 		<meta name="author" lang="fr" content="Jarl"/>
@@ -55,20 +55,225 @@
         <script src="js/distributions/modernizr.custom.full.min.js"></script>
     	</head>
 		<body>
-			<div id="wrap">
-				<header>
-				</header>
+			<nav class="navbar-fixed-top">
+            	<ul class="clearfix">
+					<li class="pull-left">Les loisirs à la carte, l’inter-CE à votre service</li>
+                    <li class="pull-right">Connexion <img src="img/icons/icon-user.png" alt="information"></li>
+                    <li class="pull-right">Acc&egrave;s rapide v <img src="img/icons/icon-info.png" alt="information"></li>
+				</ul>
+			</nav>
+			<div class="wrap">
+            	<header class="container-fluid">
+                	<ul class="row-fluid">
+                    	<li class="span4">
+                        	<a title="Retour page d'accueil" href="index.php"><img src="img/logos/logoAlices.png" alt="logo alices"></a>
+                        </li>
+                        <li class="span2">
+                        	<a class="active" href="#" title="Boutique">Boutique</a>
+                        </li>
+                        <li class="span2">
+                        	<a href="#" title="Qui sommes nous?">Qui sommes nous?</a>
+                        </li>
+                        <li class="span2">
+                        	<a href="#" title="Comment &ccedil;a marche?">Comment &ccedil;a marche?</a>
+                        </li>
+                        <li class="span2">
+                        	<a class="pull-left" href="#" title="Panier">Panier</a>
+                            <span class="pull-left nombre" title="Nombre d'articles dans le panier">12</span>
+                        </li>
+                    </ul>
+                </header>
 				<section id="principale">
+                    <div class="row-fluid">
+                        <article class="span4" id="actus">actus
+                        </article>
+                        <article class="span4" id="ce">ce
+                        </article>
+                        <article class="span4" id="particulier">particulier
+                        </article>
+                    </div>
 				</section>
                 <section id="secondaire">
+                	<nav id="rubriques">
+                    	<ul class="row-fluid">
+                        	<li class="span2">
+								<img src="img/rubriques/sport.jpg" alt="Sport &amp; loisirs">
+                            	<a href="#" title="Sport &amp; loisirs">
+                                    <p>Sport &amp; loisirs</p>
+                                </a>
+                            </li>
+                        	<li class="span2">
+								<img src="img/rubriques/spectacle.jpg" alt="spectacles &amp; loisirs">
+                            	<a href="#" title="spectacles &amp; loisirs">
+                                	<p>spectacles &amp; loisirs</p>
+                                </a>
+                            </li>
+                        	<li class="span2">
+								<img src="img/rubriques/theatre.jpg" alt="Th&eacute;&acirc;tre musique/danse">
+                            	<a href="#" title="Th&eacute;&acirc;tre musique/danse">
+                                    <p>Th&eacute;&acirc;tre musique/danse</p>
+                                </a>
+                            </li>
+                        	<li class="span2">
+								<img src="img/rubriques/ski.jpg" alt="Forfait ski">
+                            	<a href="#" title="Forfait ski">
+                                    <p>Forfait ski</p>
+                                </a>
+                            </li>
+                        	<li class="span2">
+								<img src="img/rubriques/voyages.jpg" alt="Partir en voyage">
+                            	<a href="#" title="Partir en voyage">
+                                    <p>Partir en voyage</p>
+                                </a>
+                            </li>
+                        	<li class="span2">
+								<img src="img/rubriques/parcs.jpg" alt="Parc d'attractions">    
+                            	<a href="#" title="Parcs d'attractions">                       	
+                                    <p>Parcs d'attractions</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <article id="produits">
+                    	<h4>La boutique alices, c’est plus de 12 000 produits</h4>
+                    </article>
+                    <article class="row-fluid"  id="categories">
+                        <div class="span4">
+                        	<h4>Les grandes cat&eacute;gories de la boutique</h4>
+                            <ul>
+                            	<li><img src="img/icons/adhesion.png" alt="icon adhesion"><a  href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></li>
+                                <li><img src="img/icons/culture.png" alt="icon Culture"><a  href="#" title="Culture">Culture</a></li>
+                                <li><img src="img/icons/voyages.png" alt="Voyages"><a  href="#" title="Voyages">Voyages</a></li>
+                                <li><img src="img/icons/sport_loisir_ski.png" alt="Sport / Loisirs / Ski"><a  href="#" title="Sport / Loisirs / Ski">Sport / Loisir / Ski</a></li>
+                                <li><img src="img/icons/economie.png" alt="icon economie"><a  href="#" title="Economie sociale">Economie sociale</a></li>
+                            </ul>
+                        </div>
+                        <aside class="span8" id="facebook">facebook
+                        </aside>
+                    </article>
 				</section>
-                <section id="troisieme">
-				</section>
-                <nav>
-                </nav>
-                <aside>
-                </aside>
 				<footer>
+                    <div class="row-fluid">
+                        <div class="span3 icons" id="sociallinks">
+                        	<ul class="row-fluid">
+                            	<li class="span2"><a href="#" title="Facebook">&#xf09a;</a></li>
+                                <li class="span2"><a href="#" title="Twitter">&#xf099;</a></li>
+                                <li class="span2"><a href="#" title="Google+">&#xf0d5;</a></li>
+                                <li class="span2"><a href="#" title="E-courrier">&#xf0e0;</a></li>
+                                <li class="span2"><a href="#" title="Pinterest">&#xf0d2;</a></li>
+                            </ul>
+                        </div>
+                        <div class="span9" id="credits">
+                        	<ul>
+                                <li class="pull-right"><a href="#" title="Doing.fr">Conception doing : cr&eacute;ation de site internet &agrave; Saint-etienne</a></li>
+                                <li class="pull-right espace">-</li>
+                                <li class="pull-right"><a href="#" title="Plan du site">Plan du site</a></li>
+                                <li class="pull-right espace">-</li>
+                                <li class="pull-right"><a href="#" title="Mentions l&eacute;gales">Mentions l&eacute;gales</a></li>
+                                <li class="pull-right espace">-</li>
+                                <li class="pull-right"><a href="#" title="Boutique"> Boutique</a></li>
+                                <li class="pull-right espace">-</li>
+                            	<li class="pull-right"><a href="#" title="Accueil">Accueil</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <aside>
+                    	<img src="img/logos/papillion.png" alt="Papillion logo">
+                    </aside>
+					<table class="table table-condensed">
+                    	<thead>
+                        	<tr>
+                            	<th><a href="#" title="Boutique">Boutique</a></th>
+                                <th><a href="#" title="Culture">Culture</a></th>
+                                <th><a href="#" title="Voyages">Voyages</a></th>
+                                <th><a href="#" title="Sports / loisirs / ski">Sports / loisirs / ski</a></th>
+                                <th><a href="#" title="Economie sociale">Economie sociale</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td><a href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></td>
+                                <td><a href="#" title="Actions Culturelles">Actions Culturelles</a></td>
+                                <td><a href="#" title="Devis vols secs">Devis vols secs</a></td>
+                                <td><a href="#" title="Ski">Ski</a></td>
+                                <td><a href="#" title="D&eacute;veloppement durable">D&eacute;veloppement durable</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                            <tr>
+                            	<td><a href="#" title="Culture">Culture</a></td>
+                                <td><a href="#" title="Musique / Th&eacute;&acirc;tre / Danse">Musique / Th&eacute;&acirc;tre / Danse</a></td>
+                                <td><a href="#" title="Locations">Locations</a></td>
+                                <td><a href="#" title="Sport">Sport</a></td>
+                                <td><a href="#" title="D&eacute;veloppement solidaire">D&eacute;veloppement solidaire</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                           	</tr>
+                            <tr>
+                            	<td><a href="#" title="Voyages">Voyages</a></td>
+                                <td><a href="#" title="Cin&eacute;ma">Cin&eacute;ma</a></td>
+                                <td><a href="#" title="Vacances jeunes">Vacances jeunes</a></td>
+                                <td><a href="#" title="Parcs d'attractions">Parcs d'attractions</a></td>
+                                <td><a href="#" title="Nos engagements">Nos engagements</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                            <tr>
+                            	<td><a href="#" title="Sports / Loisirs / Ski">Sports / Loisirs / Ski</a></td>
+                                <td><a href="#" title="Festivals">Festivals</a></td>
+                                <td><a href="#" title="Sortir">Sortir</a></td>
+                                <td><a href="#" title="Balades touristiques">Balades touristiques</a></td>
+                                <td><a href="#" title="Achats responsable">Achats responsable</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                            <tr>
+                            	<td><a href="#" title="Economie sociale">Economie sociale</a></td>
+                                <td><a href="#" title="Mus&eacute;es - Conf&eacute;rences">Mus&eacute;es - Conf&eacute;rences</a></td>
+                                <td><a href="#" title="Demande de devis groupe">Demande de devis groupe</a></td>
+                                <td><a href="#" title="Parcs animaliers">Parcs animaliers</a></td>
+                                <td><a href="#" title="Tourisme solidare">Tourisme solidare</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                             <tr>
+                            	<td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Abonnement Presse">Abonnement Presse</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Parcs aquatics et piscine">Parcs aquatics et piscine</a></td>
+                                <td><a href="#" title="Epargne solidaire">Epargne solidaire</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                              <tr>
+                            	<td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Programmation spectacles">Programmation spectacles</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Loisir sportifs">Loisir sportifs</a></td>
+                                <td><a href="#" title="Des services, des partenaires">Des services, des partenaires</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                              <tr>
+                            	<td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Spectacle de No&euml;l">Spectacle de No&euml;l</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Les loisirs dans la boutique">Les loisirs dans la boutique</a></td>
+                                <td><a href="#" title="Un assemblier pour les CE">Un assemblier pour les CE</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                              <tr>
+                            	<td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title="Le sport dans la boutique">Le sport dans la boutique</a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                                <td><a href="#" title=""></a></td>
+                            </tr>
+                        </tbody>
+					</table>
 				</footer>
 			</div><!--fin wrap-->
         <script src="http://code.jquery.com/jquery-latest.js"></script>

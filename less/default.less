@@ -1,27 +1,156 @@
 /*Mes styles*/
 
-@import "typo/polices/stylesheet.less"; // Fonts Abel + Open Sans
-
 /*variables*/
 
-/*--Couleurs--*/
+/*couleurs*/
 @vert: #acc92f;
-@noir: #111111;
+@noir: #000000;
 @gris: #6d6e71;
 @grisclair: #e2e2e2;
+@grismiclair: #c2c2c2;
 @blanc :#ffffff;
+
+/*
+Font-Faces
+    font-family: 'abelregular';
+    font-family: 'openlight';
+    font-family: 'openregular';
+    font-family: 'openbold';
+*/
+
+/*Polices*/
+@caps: small-caps;
+.abel{font-family:abelregular;}
+.openlight{font-family:openlight;}
+.openregular{font-family:openregular;}
+.openbold{font-family:openbold;}
+.caps{font-variant:@caps;}
+.nocaps{font-variant:normal;}
+.icons{font-family:FontAwesome;}
+
+/*Champs*/
+.champvert{background:@vert;}
+.champgris{background:@grisclair;}
+.champsparent{background:transparent;}
+
+.champverttrans{background:url(../img/fonds/fondvert-80.png) repeat;}
+.champnoirtrans{background:url(../img/fonds/fondnoir-45.png) repeat;}
+
+/*Transitions*/
+.transitionsmall{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/*Border-radius*/
+.iconround{border-radius:3em;overflow:hidden;background:@grismiclair;height:0.75em;width:1.7em;text-align:center;font-size:125%;padding-top:0.25em;}
+
 
 /*fin variables*/
 
+
+
 /*Omni-styles*/
-body{
-	div#wrap{width:1000px;margin:0 auto;padding:0 3px;
-		header{height:154px;background:#999;}
-		section#principale{}
-		section#secondaire{}
-		section#troisieme{}
-		nav{}
-		footer{}	
+
+a, a:hover{text-decoration:none;color:@noir;.transitionsmall;}
+ul{list-style-type:none;}
+.table th, .table td {border-top: 0px solid #DDDDDD;line-height: 16px;}
+h1, h2, h3, h4, h5, h6{.abel;.caps;font-weight:700;}
+
+body{.openregular;color:@noir;
+		nav{width:100%;height:40px;.champvert;.abel;.nocaps;
+			ul{width:1000px;margin:0 auto;padding:0 3px;
+				li{.caps;color:@blanc;
+					a{
+						&:hover{color:@noir;}
+						}
+					}
+				}
+			}
+	div.wrap{width:1000px;margin:0 auto;padding:40px 3px 0 3px;
+		header{.abel;.caps;
+				li{
+					a.active{border-bottom-style:solid;border-bottom-width:3px;border-bottom-color:@vert;cursor:default;
+						&:hover{color:@noir;}
+						}
+					a{
+						&:hover{color:@vert;}
+						}
+					}
+				}
+		section#principale{
+			article{height:520px;}
+			article#actus{.champvert;}
+			article#ce{.champgris;}
+			article#particulier{.champgris;}
+		}
+		section#secondaire{
+			nav#rubriques{.champsparent;
+				ul{padding-left:0;padding-right:0;
+					li{position:relative;
+						a{position:absolute;top:4.5em;left:0;width:80%;padding:0 10%;.champnoirtrans;color:@blanc;text-align:center;height:6em;
+							&:hover{.champverttrans;}
+							p{font-size:150%;letter-spacing:1px;line-height:125%;padding:0.5em 0 0 0;}
+						}
+					}
+				}
+			}
+			article#produits{
+				h1, h2, h3, h4, h5, h6{color:@vert;}
+			}
+			article#categories{.abel;
+				div.span4{.champgris;}
+				aside#fabox{}
+			}
+			
+		}
+		footer{.abel;
+			div.row-fluid{clear:both;border-bottom-style:dashed;border-bottom-width:2px;border-bottom-color:@grisclair;border-top-style:dashed;border-top-width:2px;border-top-color:@grisclair;
+				div#sociallinks{
+					ul{margin-left:0;
+						li{.iconround;
+							a{color:@blanc;
+							}
+						}
+						li:last-child{border-radius:0;.champsparent;overflow:none;height:1em;width:0.9em;text-align:center;font-size:245%;padding-top:0.15em;
+							a{color:@grismiclair;}
+						}
+					}
+				}
+				div#credits.span9{.abel;.caps;font-size:135%;width:76.595%;margin-left:0;
+					ul{
+						li{color:@gris;
+							a{color:@gris;
+								&:hover{color:@vert;}
+							}
+						}
+					}
+				}
+			}/*row-fluid*/
+			aside{text-align:center;
+				img{width:32px;margin:0 auto;height:35px;}
+			}
+			table{
+				thead{.caps;font-size:155%;}
+				tbody{font-size:115%;
+					a{color:@gris;}
+					}
+				
+				}
+			}	
 		}
 }
+
+
 /*fin Omni-styles*/
+
+
+
+/*-------------------------------------------------------------------------*/
+
+
+
+
