@@ -56,19 +56,19 @@
     	</head>
 		<body>
 			<nav class="navbar-fixed-top">
-            	<ul class="clearfix">
-					<li class="pull-left">Les loisirs à la carte, l’inter-CE à votre service</li>
-                    <li class="pull-right">Connexion <img src="img/icons/icon-user.png" alt="information"></li>
-                    <li class="pull-right">Acc&egrave;s rapide v <img src="img/icons/icon-info.png" alt="information"></li>
+            	<ul>
+					<li class="pull-left"><a href="#" title="Les loisirs à la carte..">Les loisirs à la carte, l’inter-CE à votre service</a></li>
+                    <li class="pull-right connexion"><a href="#" title="Connecxion">Connexion</a> <img src="img/icons/icon-user.png" alt="connexion"></li>
+                    <li class="pull-right accesrapid"><a href="#" title="Acc&egrave;s rapide">Acc&egrave;s rapide v </a><img src="img/icons/icon-info.png" alt="information"></li>
 				</ul>
 			</nav>
 			<div class="wrap">
-            	<header class="container-fluid">
+            	<header>
                 	<ul class="row-fluid">
-                    	<li class="span4">
+                    	<li class="span3">
                         	<a title="Retour page d'accueil" href="index.php"><img src="img/logos/logoAlices.png" alt="logo alices"></a>
                         </li>
-                        <li class="span2">
+                        <li class="span2 offset1">
                         	<a class="active" href="#" title="Boutique">Boutique</a>
                         </li>
                         <li class="span2">
@@ -79,63 +79,259 @@
                         </li>
                         <li class="span2">
                         	<a class="pull-left" href="#" title="Panier">Panier</a>
-                            <span class="pull-left nombre" title="Nombre d'articles dans le panier">12</span>
+                            <span class="pull-left" title="Nombre d'articles dans le panier">12</span>
                         </li>
                     </ul>
                 </header>
 				<section id="principale">
                     <div class="row-fluid">
-                        <article class="span4" id="actus">actus
+                        <article class="span4" id="gauche">
+							<div id="actusCarousel" class="carousel slide">
+                                <ol class="carousel-indicators">
+                                <li data-target="#actusCarousel" data-slide-to="0" class="first"></li>
+                                <li data-target="#actusCarousel" data-slide-to="1" class="active"></li>
+                                <li data-target="#actusCarousel" data-slide-to="2"></li>
+                                <li data-target="#actusCarousel" data-slide-to="3"></li>
+                                </ol>
+								<p class="savoirPlus">
+									<a href="#" title="en savoir +">Je veux en savoir +</a>
+								</p>                           
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                           <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                           <h3>Woodkid en concert</h3>
+                                           <p>
+                                           Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
+Il sera notamment en concert dans plusieurs villes de France.
+                                           </p>
+                                    </div>
+                                    <div class="active item">
+                                      <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                           <h3>Woodkid en concert</h3>
+                                           <p>
+                                           Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
+Il sera notamment en concert dans plusieurs villes de France.
+                                           </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                           <h3>Woodkid en concert</h3>
+                                           <p>
+                                           Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
+Il sera notamment en concert dans plusieurs villes de France.
+                                           </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                           <h3>Woodkid en concert</h3>
+                                           <p>
+                                           Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
+Il sera notamment en concert dans plusieurs villes de France.
+                                           </p>
+                                    </div>
+                                </div><!--fin carousel-inner-->
+                                <!-- Carousel nav 
+                                <a class="carousel-control left" href="#actusCarousel" data-slide="prev">&lsaquo;</a>
+                                <a class="carousel-control right" href="#actusCarousel" data-slide="next">&rsaquo;</a>-->
+                                </div>
                         </article>
-                        <article class="span4" id="ce">ce
+                        <article class="span4" id="millieu">
+                        <div id="searchbox">
+                        	<h4>Rechercher dans la boutique</h4>
+                            <form>                            
+                           </form>
+                        </div>
+                        <div id="inscription">
+                        	<h4>Mon espace personnel</h4>
+                        	<form>
+                            </form>
+                            <p>
+                            mot de passe perdu / <a href="#" title="activer le compte">activer son compte</a> / <a href="#" title="cr&eacute;er  le compte"> cr&eacute;er son compte</a>
+                            </p>
+                        </div>
+                        <div id="ce">
+                        	<h4>Vous &ecirc;tes un Comit&eacute; d’entreprise</h4>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            </p>
+                        </div>
+						<p class="savoirPlus pull-right">
+							<a href="#" title="en savoir +">Je veux en savoir +</a>
+						</p>       
                         </article>
-                        <article class="span4" id="particulier">particulier
+                        <article class="span4" id="droite">
+                     	   <div id="alices" class="scroll-pane">
+                                    <h4>Alices</h4>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+            Lorem ipsum dolor sit amet.
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+            Lorem ipsum dolor sit amet.
+                                    </p>
+                            </div><!--end #alices-->
+                            <div id="particulier">
+                            <h4>Vous êtes un particulier</h4>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
+                            </p>
+                            </div>
+							<p class="savoirPlus pull-right">
+								<a href="#" title="en savoir +">Je veux en savoir +</a>
+							</p>      
                         </article>
                     </div>
 				</section>
                 <section id="secondaire">
-                	<nav id="rubriques">
+                	<article id="rubriques">
                     	<ul class="row-fluid">
                         	<li class="span2">
 								<img src="img/rubriques/sport.jpg" alt="Sport &amp; loisirs">
                             	<a href="#" title="Sport &amp; loisirs">
-                                    <p>Sport &amp; loisirs</p>
+                                    <h3>Sport &amp; <br>loisirs</h3>
                                 </a>
                             </li>
                         	<li class="span2">
 								<img src="img/rubriques/spectacle.jpg" alt="spectacles &amp; loisirs">
                             	<a href="#" title="spectacles &amp; loisirs">
-                                	<p>spectacles &amp; loisirs</p>
+                                	<h3>spectacles <br>&amp; loisirs</h3>
                                 </a>
                             </li>
                         	<li class="span2">
 								<img src="img/rubriques/theatre.jpg" alt="Th&eacute;&acirc;tre musique/danse">
-                            	<a href="#" title="Th&eacute;&acirc;tre musique/danse">
-                                    <p>Th&eacute;&acirc;tre musique/danse</p>
+                            	<a href="#" title="Th&eacute;&acirc;tre musique/danse">                                   
+                                <h3>Th&eacute;&acirc;tre <br>musique / danse</h3>
                                 </a>
                             </li>
                         	<li class="span2">
 								<img src="img/rubriques/ski.jpg" alt="Forfait ski">
                             	<a href="#" title="Forfait ski">
-                                    <p>Forfait ski</p>
+                                    <h3>Forfait <br>ski</h3>
                                 </a>
                             </li>
                         	<li class="span2">
 								<img src="img/rubriques/voyages.jpg" alt="Partir en voyage">
                             	<a href="#" title="Partir en voyage">
-                                    <p>Partir en voyage</p>
+                                    <h3>Partir <br>en voyage</h3>
                                 </a>
                             </li>
                         	<li class="span2">
 								<img src="img/rubriques/parcs.jpg" alt="Parc d'attractions">    
                             	<a href="#" title="Parcs d'attractions">                       	
-                                    <p>Parcs d'attractions</p>
+                                    <h3>Parcs <br>d'attractions</h3>
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </article>
                     <article id="produits">
                     	<h4>La boutique alices, c’est plus de 12 000 produits</h4>
+                        <div id="produitCarousel" class="carousel slide">
+                           <!-- <ol class="carousel-indicators">
+                                <li data-target="#produitCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#produitCarousel" data-slide-to="1"></li>
+                                <li data-target="#produitCarousel" data-slide-to="2"></li>
+                            </ol>-->
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item row-fluid">
+                                    <div class="span10 row-fluid offset1">
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book1.jpg" align="produit">
+                                            <h4>Asaf Avidan</h4>
+                                            <h5>Concert Pop / Rock</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book2.jpg" align="produit">
+                                            <h4>L'empereur Jade</h4>
+                                            <h5>Cirque / Contemporain</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book3.jpg" align="produit">
+                                            <h4>Dynamo Atelier enfant 5/7 ans</h4>
+                                            <h5>Musee / Exposition</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book4.jpg" align="produit">
+                                            <h4>Robert alagna &amp; big band</h4>
+                                            <h5>Opera / Classique</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                  <div class="item row-fluid">
+                                    <div class="span10 row-fluid offset1">
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book1.jpg" align="produit">
+                                            <h4>Asaf Avidan</h4>
+                                            <h5>Concert Pop / Rock</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book2.jpg" align="produit">
+                                            <h4>L'empereur Jade</h4>
+                                            <h5>Cirque / Contemporain</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book3.jpg" align="produit">
+                                            <h4>Dynamo Atelier enfant 5/7 ans</h4>
+                                            <h5>Musee / Exposition</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book4.jpg" align="produit">
+                                            <h4>Robert alagna &amp; big band</h4>
+                                            <h5>Opera / Classique</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                  <div class="item row-fluid">
+                                    <div class="span10 row-fluid offset1">
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book1.jpg" align="produit">
+                                            <h4>Asaf Avidan</h4>
+                                            <h5>Concert Pop / Rock</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book2.jpg" align="produit">
+                                            <h4>L'empereur Jade</h4>
+                                            <h5>Cirque / Contemporain</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book3.jpg" align="produit">
+                                            <h4>Dynamo Atelier enfant 5/7 ans</h4>
+                                            <h5>Musee / Exposition</h5>
+                                        </a>
+                                        <a class="span3" href="#" title="Produit">
+                                            <img src="img/slides/produits/book4.jpg" align="produit">
+                                            <h4>Robert alagna &amp; big band</h4>
+                                            <h5>Opera / Classique</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel nav -->
+                            <a class="carousel-control left icons" href="#produitCarousel" data-slide="prev">&#xf053;</a>
+                            <a class="carousel-control right icons" href="#produitCarousel" data-slide="next">&#xf054;</a>
+                        </div>
                     </article>
                     <article class="row-fluid"  id="categories">
                         <div class="span4">
@@ -183,11 +379,11 @@
 					<table class="table table-condensed">
                     	<thead>
                         	<tr>
-                            	<th><a href="#" title="Boutique">Boutique</a></th>
-                                <th><a href="#" title="Culture">Culture</a></th>
-                                <th><a href="#" title="Voyages">Voyages</a></th>
-                                <th><a href="#" title="Sports / loisirs / ski">Sports / loisirs / ski</a></th>
-                                <th><a href="#" title="Economie sociale">Economie sociale</a></th>
+                            	<th><a href="#" title="Boutique"><h3>Boutique</h3></a></th>
+                                <th><a href="#" title="Culture"><h3>Culture</a></h3></th>
+                                <th><a href="#" title="Voyages"><h3>Voyages</a></h3></th>
+                                <th><a href="#" title="Sports / loisirs / ski"><h3>Sports / loisirs / ski</a></h3></th>
+                                <th><a href="#" title="Economie sociale"><h3>Economie sociale</a></h3></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -276,9 +472,7 @@
 					</table>
 				</footer>
 			</div><!--fin wrap-->
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script>window.jQuery || document.write('<script src="js/distributions/jquery-1.10.0.min.js"><\/script>')</script>
-		<script src="js/plugs/bootstrap.min.js"></script>
+        <script src="js/distributions/jquery-1.10.0.min.js"></script>
         <script src="js/plugs-ck.js"></script>
         <script src="js/animation-ck.js"></script>
 		<!--<script>

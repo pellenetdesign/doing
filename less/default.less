@@ -16,6 +16,7 @@ Font-Faces
     font-family: 'openlight';
     font-family: 'openregular';
     font-family: 'openbold';
+	fotn-family: 'FontAwesome';
 */
 
 /*Polices*/
@@ -44,10 +45,43 @@ Font-Faces
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-
+.transitionNormal{
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	transition: all 1.5s ease;
+}
+.transitionLarge{
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+	-ms-transition: all 3s ease;
+	-o-transition: all 3s ease;
+	transition: all 3s ease;
+}
+.transitionXl{
+	-webkit-transition: all 5s ease;
+	-moz-transition: all 5s ease;
+	-ms-transition: all 5s ease;
+	-o-transition: all 5s ease;
+	transition: all 5s ease;
+}
+.transitionOpacityXl{
+	-webkit-transition: opacity 5s ease;
+	-moz-transition: opacity 5s ease;
+	-ms-transition: opacity 5s ease;
+	-o-transition: opacity 5s ease;
+	transition: opacity 5s ease;
+}
 /*Border-radius*/
 .iconround{border-radius:3em;overflow:hidden;background:@grismiclair;height:0.75em;width:1.7em;text-align:center;font-size:125%;padding-top:0.25em;}
+.radiusSmall{border-radius:2px;overflow:hidden;}
+.radiusMedium{border-radius:5px;overflow:hidden;}
+.radiusMedium{border-radius:8px;overflow:hidden;}
+.round{border-radius:150px;overflow:hidden;}
 
+/*scroll bars*/
+.scroll{overflow:scroll;}
 
 /*fin variables*/
 
@@ -58,83 +92,207 @@ Font-Faces
 a, a:hover{text-decoration:none;color:@noir;.transitionsmall;}
 ul{list-style-type:none;}
 .table th, .table td {border-top: 0px solid #DDDDDD;line-height: 16px;}
-h1, h2, h3, h4, h5, h6{.abel;.caps;font-weight:700;}
+h1, h2, h3, h4, h5, h6{.abel;.caps;font-weight:400;}
 
 body{.openregular;color:@noir;
 		nav{width:100%;height:40px;.champvert;.abel;.nocaps;
 			ul{width:1000px;margin:0 auto;padding:0 3px;
-				li{.caps;color:@blanc;
-					a{
-						&:hover{color:@noir;}
+				li{
+					a{color:@blanc;font-size:150%;letter-spacing:1px;line-height:195%;
+						&:hover{color:@gris;}
 						}
-					}
+					img{margin:-10px 0 0 10px;}
+					}	
+				li.connexion, li.accesrapid{.caps;margin-right:50px;}
 				}
 			}
 	div.wrap{width:1000px;margin:0 auto;padding:40px 3px 0 3px;
-		header{.abel;.caps;
-				li{
+		header{.abel;.caps;padding:32px 0 16px 0;
+				li{text-align:center;
 					a.active{border-bottom-style:solid;border-bottom-width:3px;border-bottom-color:@vert;cursor:default;
 						&:hover{color:@noir;}
 						}
-					a{
+					a{font-size:125%;line-height:275%;
 						&:hover{color:@vert;}
 						}
+					span{.champvert;text-align:center;height:40px;width:40px;line-height:40px;.round;font-size:145%;color:@blanc;margin:5px 0 0 15px;}
 					}
 				}
 		section#principale{
 			article{height:520px;}
-			article#actus{.champvert;}
-			article#ce{.champgris;}
-			article#particulier{.champgris;}
+			article#gauche{.champvert;
+				div#actusCarousel{
+					ol.carousel-indicators{
+						cursor:pointer;
+						background:@blanc;
+						top:496px;
+						left:0;
+						width:100%;
+						margin:0;
+						padding:7px 7px 7px 0;
+							li.first{margin-left:0;}
+							li{
+				  			background-color: @vert;
+				  			background-color: rgba(172, 201, 47, 1);
+							border-radius:0;
+							}
+							.active{
+				  			background-color: @gris;
+				  			background-color: rgba(109, 110, 113, 1);
+							}
+						}
+					p.savoirPlus{
+							.abel;
+							font-size:125%;
+							position:absolute;
+							background:@gris;
+							top:496px;
+							right:0;
+							text-align:center;
+							padding:3px 5px;
+							z-index:10;
+							a{color:@blanc;
+								&:hover{color:@vert;}
+								}
+							}
+					div.carousel-inner{
+						div.item{color:@blanc;.transitionNormal;
+								img{}
+								h3{padding-left:10px;padding-right:10px;}
+								p{padding-left:10px;padding-right:10px;line-height:125%;}
+							}
+						}	
+					}/*carousel*/
+				}
+			article#millieu{
+				p{font-size:75%;color:@gris;overflow:hidden;}
+				h4{margin-top:0;}
+				div#searchbox{.champgris;height:80px;padding:10px 15px;
+					
+					}
+				div#inscription{border:1px @grisclair solid;margin:28.5px 0;height:140px;padding:10px 15px;}
+				div#ce{.champgris;height:155px;padding:10px 15px;}
+				p.savoirPlus{
+						margin:0;
+						.abel;
+						width:45%;
+						font-size:125%;
+						background:@vert;
+						text-align:center;
+						padding:3px 5px;
+						z-index:10;
+						a{color:@blanc;
+							&:hover{color:@gris;}
+							}
+						}
+				}
+			article#droite{
+					p{font-size:75%;color:@gris;overflow:hidden;}
+					h4{margin-top:0;}
+				div#alices{padding:10px 15px;border:1px @grisclair solid;height:288px;overflow:auto;
+					}
+				div#particulier{.champgris;height:155px;padding:10px 15px;margin-top:29px;}
+				p.savoirPlus{
+						margin:0;
+						.abel;
+						width:45%;
+						font-size:125%;
+						background:@vert;
+						text-align:center;
+						padding:3px 5px;
+						z-index:10;
+						a{color:@blanc;
+							&:hover{color:@gris;}
+							}
+						}
+			}
 		}
 		section#secondaire{
-			nav#rubriques{.champsparent;
-				ul{padding-left:0;padding-right:0;
+			article#rubriques{.champsparent;margin-top:30px;
+				ul{padding-left:0;padding-right:0;margin-left:0;
 					li{position:relative;
-						a{position:absolute;top:4.5em;left:0;width:80%;padding:0 10%;.champnoirtrans;color:@blanc;text-align:center;height:6em;
+						img{margin:0;}
+						a{position:absolute;top:65px;left:0;width:100%;.champnoirtrans;color:@blanc;text-align:center;height:75px;
 							&:hover{.champverttrans;}
-							p{font-size:150%;letter-spacing:1px;line-height:125%;padding:0.5em 0 0 0;}
+							h3{line-height:100%;padding:0 0 0 0;margin-left:0;margin-right:0;}
 						}
 					}
 				}
 			}
-			article#produits{
-				h1, h2, h3, h4, h5, h6{color:@vert;}
+			article#produits{border:1px @grisclair solid;padding:0 15px;margin:30px 0;
+				h1, h2, h3, h4{color:@vert;.abel;}
+				h5, h6{color:@gris;.openregular;.caps}
+				produitWrap{border:1px @grisclair solid;}
+				div#produitCarousel.carousel{margin-bottom:10px;
+					div.carousel-inner{
+						div.item{text-align:center;margin-top:20px;.transitionXl;
+							a{
+								img{width:85px;margin:0 auto;}
+								h4, h5{line-height:100%;padding:0 15%;margin:5px 0;}
+							}
+						}
+					}
+					.carousel-control {
+					font-size: 500%;
+					color: @grismiclair;
+					border-radius:none;
+					border:none;
+					background: transparent;
+
+					  // Hover/focus state
+					  &:hover,
+					  &:focus {
+					    color: @gris;
+						 background: transparent;
+					    text-decoration: none;
+					    .opacity(90);
+					  }
+					}
+				}/*produitCarousel*/
 			}
 			article#categories{.abel;
-				div.span4{.champgris;}
-				aside#fabox{}
+				div.span4{.champgris;padding:0 15px;
+					ul{margin-left:15px;
+						li{padding:5px	0;
+							img{margin-right:10px;}
+							a{margin-top:15px;color:@gris;font-size:125%;}
+							}
+						}
+					}
+				aside#fanbox{}
 			}
 			
 		}
-		footer{.abel;
-			div.row-fluid{clear:both;border-bottom-style:dashed;border-bottom-width:2px;border-bottom-color:@grisclair;border-top-style:dashed;border-top-width:2px;border-top-color:@grisclair;
+		footer{.abel;clear:both;
+			div.row-fluid{margin-top:30px;clear:both;border-bottom-style:dashed;border-bottom-width:2px;border-bottom-color:@grisclair;border-top-style:dashed;border-top-width:2px;border-top-color:@grisclair;padding-top:10px;
 				div#sociallinks{
 					ul{margin-left:0;
 						li{.iconround;
-							a{color:@blanc;
-							}
+							a{color:@blanc;}
 						}
 						li:last-child{border-radius:0;.champsparent;overflow:none;height:1em;width:0.9em;text-align:center;font-size:245%;padding-top:0.15em;
-							a{color:@grismiclair;}
+							a{color:@grismiclair;
+								}
 						}
 					}
 				}
 				div#credits.span9{.abel;.caps;font-size:135%;width:76.595%;margin-left:0;
 					ul{
-						li{color:@gris;
-							a{color:@gris;
-								&:hover{color:@vert;}
+						li{line-height:175%;color:@grismiclair;
+							a{color:@grismiclair;
+								&:hover{color:@gris;line-height:200%;border-top-style:solid;border-top-width:3px;border-top-color:@vert;}
 							}
 						}
 					}
 				}
 			}/*row-fluid*/
-			aside{text-align:center;
+			aside{text-align:center;margin:15px;
 				img{width:32px;margin:0 auto;height:35px;}
 			}
 			table{
-				thead{.caps;font-size:155%;}
+				thead{
+					h3{margin:0;line-height:100%;}
+					}
 				tbody{font-size:115%;
 					a{color:@gris;}
 					}
