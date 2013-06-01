@@ -67,11 +67,11 @@ Font-Faces
 	transition: all 5s ease;
 }
 .transitionOpacityXl{
-	-webkit-transition: opacity 5s ease;
-	-moz-transition: opacity 5s ease;
-	-ms-transition: opacity 5s ease;
-	-o-transition: opacity 5s ease;
-	transition: opacity 5s ease;
+	-webkit-transition: all 5s ease;
+	-moz-transition: all 5s ease;
+	-ms-transition: all 5s ease;
+	-o-transition: all 5s ease;
+	transition: all 5s ease;
 }
 /*Border-radius*/
 .iconround{border-radius:3em;overflow:hidden;background:@grismiclair;height:0.75em;width:1.7em;text-align:center;font-size:125%;padding-top:0.25em;}
@@ -82,6 +82,90 @@ Font-Faces
 
 /*scroll bars*/
 .scroll{overflow:scroll;}
+
+
+/*Carousel fade effect*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: 1.5s opacity;
+  -moz-transition-property: 1.5s opacity;
+  -o-transition-property: 1.5s opacity;
+  transition-property: 1.5s opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*Form styles*/
+	::-webkit-input-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
+	:-moz-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
+	::-moz-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
+	:-ms-input-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
+	
+input, select, textarea {.openregular;}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  height: @baseLineHeight;
+  padding: 8px 6px;
+  margin-bottom: @baseLineHeight / 2;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @gris;
+box-shadow:none;
+	border:none;
+  border-radius:4px 0 0 4px;
+  vertical-align: middle;
+}
+
+
+.btn {
+    background-color: @vert;
+    background-image: none;
+    background-repeat: repeat-x;
+    border:none;
+    box-shadow: none;
+    color: @blanc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 8px 24px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75)
+}
+
+
 
 /*fin variables*/
 
@@ -165,12 +249,22 @@ body{.openregular;color:@noir;
 					}/*carousel*/
 				}
 			article#millieu{
-				p{font-size:75%;color:@gris;overflow:hidden;}
+				p{font-size:75%;color:@gris;overflow:hidden;
+					a{font-size:50%;
+						&:hover{color:@vert;}
+						}
+					}
 				h4{margin-top:0;}
 				div#searchbox{.champgris;height:80px;padding:10px 15px;
-					
+					form{width:100%;}
 					}
-				div#inscription{border:1px @grisclair solid;margin:28.5px 0;height:140px;padding:10px 15px;}
+				div#inscription{border:1px @grisclair solid;margin:28.5px 0;height:140px;padding:10px 15px;
+						form{margin-bottom:0;
+						span{margin-bottom:0;}
+						input{box-shadow:0 0 0 4px @grismiclair;padding: 4px 6px;margin-top:4px;}
+						input#identification{border-radius:4px;width:275px;}
+						}
+					}
 				div#ce{.champgris;height:155px;padding:10px 15px;}
 				p.savoirPlus{
 						margin:0;

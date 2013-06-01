@@ -1,2 +1,0 @@
-//Plugs
-//@codekit-prepend "bootstrap/bootstrap.min.js", "bootstrap/bootstrap-affix.js", "bootstrap/bootstrap-alert.js", "bootstrap/bootstrap-button.js", "bootstrap/bootstrap-carousel.js", "bootstrap/bootstrap-collapse.js", "bootstrap/bootstrap-dropdown.js", "bootstrap/bootstrap-modal.js", "bootstrap/bootstrap-scrollspy.js", "bootstrap/bootstrap-tab.js", "bootstrap/bootstrap-tooltip.js", "bootstrap/bootstrap-popover.js", "bootstrap/bootstrap-transition.js", "bootstrap/bootstrap-alert.js", "bootstrap/bootstrap-typeahead.js";

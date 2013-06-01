@@ -86,7 +86,7 @@
 				<section id="principale">
                     <div class="row-fluid">
                         <article class="span4" id="gauche">
-							<div id="actusCarousel" class="carousel slide">
+							<div id="actusCarousel" class="carousel slides carousel-fade">
                                 <ol class="carousel-indicators">
                                 <li data-target="#actusCarousel" data-slide-to="0" class="first"></li>
                                 <li data-target="#actusCarousel" data-slide-to="1" class="active"></li>
@@ -100,7 +100,7 @@
                                 <div class="carousel-inner">
                                     <div class="item">
                                            <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert</h3>
+                                           <h3>Woodkid en concert - 1</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -108,7 +108,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                     </div>
                                     <div class="active item">
                                       <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert</h3>
+                                           <h3>Woodkid en concert - 2</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -116,7 +116,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                     </div>
                                     <div class="item">
                                         <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert</h3>
+                                           <h3>Woodkid en concert - 3</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -124,7 +124,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                     </div>
                                     <div class="item">
                                         <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert</h3>
+                                           <h3>Woodkid en concert - 4</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -139,15 +139,22 @@ Il sera notamment en concert dans plusieurs villes de France.
                         <article class="span4" id="millieu">
                         <div id="searchbox">
                         	<h4>Rechercher dans la boutique</h4>
-                            <form>                            
-                           </form>
+							<form class="input-append">
+                                <input id="appendedInputButton search" type="text" placeholder="ex : forfait isola 2000, florence foresti, ...">
+                                <button class="btn icons" type="button">&#xf002;</button>
+							</form>  
                         </div>
                         <div id="inscription">
                         	<h4>Mon espace personnel</h4>
-                        	<form>
-                            </form>
+							<form>
+                            	<input type="text" id="identification"  placeholder="ex : forfait isola 2000, florence foresti, ...">
+                                <span  class="input-append">
+                                <input id="appendedInputButton password" type="text" placeholder="mot de passe">
+                                <button class="btn icons" type="button">ok</button>
+                                </span>
+							</form>  
                             <p>
-                            mot de passe perdu / <a href="#" title="activer le compte">activer son compte</a> / <a href="#" title="cr&eacute;er  le compte"> cr&eacute;er son compte</a>
+                            <a href="#" title="mot de passe perdu">mot de passe perdu</a> / <a href="#" title="activer le compte">activer son compte</a> / <a href="#" title="cr&eacute;er  le compte"> cr&eacute;er son compte</a>
                             </p>
                         </div>
                         <div id="ce">
