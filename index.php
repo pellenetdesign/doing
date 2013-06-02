@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="ie7 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="ie8 lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="ie9 lt-ie10"> <![endif]-->
-<!--[if gt IE 10]><!--> <html class="version10"><!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="Jarl HELIN, Infographiste, int&eacute;grateur et  Frontend web designer. Sp&eacute;cialis&eacute; dans le UX, IA et d'appliquer un code semantique suivant le standard du W3 Consortium">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="publisher" content="Doing.fr"/>
-		<meta name="Keywords" lang="fr-fr" content="Travail fictif, alices, doing"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="robots" content="index, no-follow"/>
-		<meta name="revisit-after" content="30 days"/>
-		<meta name="author" lang="fr" content="Jarl HELIN"/>
-		<meta name="generator" content="Easydo"/>
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
-		 <title>Un travail fictif - doing.fr '</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		 <title>Un travail fictif - doing.fr</title>
        <!-- media-queries.js (fallback) -->
         <!--[if lt IE 9]>
-            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>			
         <![endif]-->
-        <!-- html5.js -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]--> 
         <!--[if lt IE 8]>
           <script src="less/typo/font-awesome/css/font-awesome-ie7.css"></script>
-         <![endif]     
-		<link rel=”shortcut icon” href=”favicon.ico”>-->      
-		<link rel="canonical" href="http://doing.pellenetdesign.fr/">
+		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <script src="js/distributions/modernizr.custom.full.min.js"></script>
     	</head>
 		<body>
 			<nav class="navbar-fixed-top">
-            	<ul>
-					<li class="pull-left"><a href="#" title="Les loisirs à la carte..">Les loisirs à la carte, l’inter-CE à votre service</a></li>
-                    <li class="pull-right connexion"><a href="#" title="Connecxion">Connexion</a> <img src="img/icons/icon-user.png" alt="connexion"></li>
-                    <li class="pull-right accesrapid"><a href="#" title="Acc&egrave;s rapide">Acc&egrave;s rapide v </a><img src="img/icons/icon-info.png" alt="information"></li>
+            	<ul class="row-fluid">
+					<li class="span6 offset1"><a href="#">Les loisirs à la carte, l’inter-CE à votre service</a></li>
+					 <li class="span3 dropdown accesrapide">
+							<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="index.php">
+								Acc&egrave;s rapide
+								<span class="icons">&#xf078;</span>
+							</a>
+								<ul class="dropdown-menu dropdown-menu-medium" role="menu" aria-labelledby="dLabel">
+							     	<li>
+										<a href="#">Acc&egrave;s rapide Un</a>
+									</li>
+									<li>
+										<a href="#">Acc&egrave;s rapide Deux</a>
+									</li>
+									<li>
+										<a href="#">Acc&egrave;s rapide Trois</a>
+									</li>
+									<li>
+										<a href="#">Acc&egrave;s rapide Quatre</a>
+									</li>
+									<li>
+										<a href="#">Acc&egrave;s rapide Cinq</a>
+									</li>
+								</ul>
+							</a>
+							<img src="img/icons/icon-info.png" alt="information">
+						</li>
+                    <li class="span2 connexion"><a href="#">Connexion</a> <img src="img/icons/icon-user.png" alt="connexion"></li>
 				</ul>
 			</nav>
 			<div class="wrap">
             	<header>
-                	<ul class="row-fluid">
+                	<ul class="row-fluid ttTop">
                     	<li class="span3">
                         	<a title="Retour page d'accueil" href="index.php"><img src="img/logos/logoAlices.png" alt="logo alices"></a>
                         </li>
@@ -63,7 +72,7 @@
                 </header>
 				<section id="principale">
                     <div class="row-fluid">
-                        <article class="span4" id="gauche">
+                        <article class="span4 ttTop" id="gauche">
 							<div id="actusCarousel" class="carousel slides carousel-fade">
                                 <ol class="carousel-indicators">
                                 <li data-target="#actusCarousel" data-slide-to="0" class="first"></li>
@@ -77,7 +86,7 @@
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
                                     <div class="item">
-                                           <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                           <img src="img/slides/actus/kidwood.jpg" alt="Woodkid">
                                            <h3>&Ccedil;a va envoyer, grave!</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
@@ -93,7 +102,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                            </p>
                                     </div>
                                     <div class="item">
-                                        <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                        <img src="img/slides/actus/widkood.jpg" alt="Woodkid">
                                            <h3>Ben oui, m&ecirc;me pas de singback!</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
@@ -101,7 +110,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                            </p>
                                     </div>
                                     <div class="item">
-                                        <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
+                                        <img src="img/slides/actus/koodwid.jpg" alt="Woodkid">
                                            <h3>on ne plaisante pas, LIVE!</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
@@ -114,7 +123,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                 <a class="carousel-control right" href="#actusCarousel" data-slide="next">&rsaquo;</a>-->
                                 </div>
                         </article>
-                        <article class="span4" id="millieu">
+                        <article class="span4 ttTop" id="millieu">
                         <div id="searchbox">
                         	<h4>Rechercher dans la boutique</h4>
 							<form class="input-append">
@@ -146,7 +155,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							<a href="#" title="en savoir +">Je veux en savoir +</a>
 						</p>       
                         </article>
-                        <article class="span4" id="droite">
+                        <article class="span4 ttTop" id="droite">
                      	   <div id="alices" class="scroll-pane">
                                     <h4>Alices</h4>
                                     <p>
@@ -190,7 +199,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                     </div>
 				</section>
                 <section id="secondaire">
-                	<article id="rubriques">
+                	<article class="ttTop" id="rubriques">
                     	<ul class="row-fluid">
                         	<li class="span2">
 								<img src="img/rubriques/sport.jpg" alt="Sport &amp; loisirs">
@@ -230,7 +239,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                             </li>
                         </ul>
                     </article>
-                    <article id="produits">
+                    <article class="ttTop" id="produits">
                     	<h4 class="title">La boutique alices, c’est plus de 12 000 produits</h4>
                         <div id="produitCarousel" class="carousel slide">
                            <!-- <ol class="carousel-indicators">
@@ -321,7 +330,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                         	<a href="#" title="Je veux voir tous les produits Alices">Je veux voir tous les produits Alices</a>
                         </p>
                     </article>
-                    <article class="row-fluid"  id="categories">
+                    <article class="row-fluid ttTop"  id="categories">
                         <div class="span4">
                         	<h4>Les grandes cat&eacute;gories de la boutique</h4>
                             <ul>
@@ -336,7 +345,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                         </aside>
                     </article>
 				</section>
-				<footer>
+				<footer class="ttTop">
                     <div class="row-fluid">
                         <div class="span3 icons" id="sociallinks">
                         	<ul class="row-fluid">
