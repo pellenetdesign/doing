@@ -1,2 +1,2 @@
 // mes animations jQuery
-$(document).ready(function(){$("#actusCarousel").carousel({interval:6e3});$("#produitCarousel").carousel({interval:1e4});$(function(){$(".scroll-pane").jScrollPane()});$(".scroll-pane").css("width","288px");$(".jspContainer").css("width","288px")});
+$(document).ready(function(){$("#actusCarousel").carousel({interval:6e3});$("#produitCarousel").carousel({interval:1e4});$(function(){$(".scroll-pane").jScrollPane()});$(".scroll-pane").css("width","274px");$(".jspContainer").css("width","274px")});

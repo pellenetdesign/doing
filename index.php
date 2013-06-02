@@ -6,39 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
         <meta name="description" content="Jarl HELIN, Infographiste, int&eacute;grateur et  Frontend web designer. Sp&eacute;cialis&eacute; dans le UX, IA et d'appliquer un code semantique suivant le standard du W3 Consortium">
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="publisher" content="Doing.fr"/>
 		<meta name="Keywords" lang="fr-fr" content="Travail fictif, alices, doing"/>
 		<meta name="robots" content="index, no-follow"/>
-		<meta name="revisit-after" content="7 days"/>
-		<meta name="author" lang="fr" content="Jarl"/>
+		<meta name="revisit-after" content="30 days"/>
+		<meta name="author" lang="fr" content="Jarl HELIN"/>
 		<meta name="generator" content="Easydo"/>
-		<!--<meta name="msvalidate.01" content="454340E71315CEC340C6935C700AD047" />-->
-		<!--no highlight in IE
-		<meta name="msapplication-tap-highlight" content="no" />-->
-		<!--https://developers.facebook.com/docs/opengraph/tutorial/
-		<meta property="og:title" content="">
-		<meta property="og:description" content="">	
-		<meta property="og:image" content="">-->
-		<!--https://dev.twitter.com/docs/cards -->
-		<!--<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@pellenetdesign">
-		<meta name="twitter:creator" content="@pellenetdesign">-->
-		<!--<meta name="twitter:url" content="http://www.example.com/path/to/page.html">
-		<meta name="twitter:title" content="">
-		<meta name="twitter:description" content="">
-		<meta name="twitter:image" content="http://www.example.com/path/to/image.jpg">-->
-		<!--Canonical URL - Signal to search engines and others "Use this URL for this page!" Useful when parameters after a # or ? is used to control the display state of a page. http://www.example.com/cart.html?shopping-cart-open=true can be indexed as the cleaner, more accurate http://www.example.com/cart.html.-->
-		<link rel="canonical" href="http://doing.pellenetdesign.fr/">
-		<!--http://www.rssboard.org/rss-specification
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">-->
-		<!--Your server may be notified when another site links to yours. The href attribute should contain the location of your pingback service.
-		<link rel="pingback" href="">-->
-		<!--Give your Pinned Site a tooltip - You know — a tooltip. A little textbox that appears when the user holds their mouse over your Pinned Site's icon.
-		<meta name="msapplication-tooltip" content="I Make Ideas Become Websites">-->
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+		 <title>Un travail fictif - doing.fr '</title>
        <!-- media-queries.js (fallback) -->
         <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
@@ -46,12 +23,13 @@
         <!-- html5.js -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->      
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <![endif]--> 
         <!--[if lt IE 8]>
           <script src="less/typo/font-awesome/css/font-awesome-ie7.css"></script>
          <![endif]     
-		<link rel=”shortcut icon” href=”favicon.ico”>--> 
+		<link rel=”shortcut icon” href=”favicon.ico”>-->      
+		<link rel="canonical" href="http://doing.pellenetdesign.fr/">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <script src="js/distributions/modernizr.custom.full.min.js"></script>
     	</head>
 		<body>
@@ -100,7 +78,7 @@
                                 <div class="carousel-inner">
                                     <div class="item">
                                            <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert - 1</h3>
+                                           <h3>&Ccedil;a va envoyer, grave!</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -108,7 +86,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                     </div>
                                     <div class="active item">
                                       <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert - 2</h3>
+                                           <h3>Woodkid en concert</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -116,7 +94,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                     </div>
                                     <div class="item">
                                         <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert - 3</h3>
+                                           <h3>Ben oui, m&ecirc;me pas de singback!</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -124,7 +102,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                     </div>
                                     <div class="item">
                                         <img src="img/slides/actus/woodkid.jpg" alt="Woodkid">
-                                           <h3>Woodkid en concert - 4</h3>
+                                           <h3>on ne plaisante pas, LIVE!</h3>
                                            <p>
                                            Le 18 mars 2013, Woodkid s'appr&ecirc;te enfin &agrave; d&eacute;voiler au monde The Golden Age, son tout premier album, &eacute;labor&eacute; et poli dans le plus grand secret, tout au long de l'ann&eacute; derni&egrave;re. 
 Il sera notamment en concert dans plusieurs villes de France.
@@ -253,7 +231,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                         </ul>
                     </article>
                     <article id="produits">
-                    	<h4>La boutique alices, c’est plus de 12 000 produits</h4>
+                    	<h4 class="title">La boutique alices, c’est plus de 12 000 produits</h4>
                         <div id="produitCarousel" class="carousel slide">
                            <!-- <ol class="carousel-indicators">
                                 <li data-target="#produitCarousel" data-slide-to="0" class="active"></li>
@@ -334,24 +312,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div><!--fin inner-carousel-->
                             <!-- Carousel nav -->
                             <a class="carousel-control left icons" href="#produitCarousel" data-slide="prev">&#xf053;</a>
                             <a class="carousel-control right icons" href="#produitCarousel" data-slide="next">&#xf054;</a>
-                        </div>
+                        </div><!--fin carousel-->
+                        <p class="savoirPlus pull-right">
+                        	<a href="#" title="Je veux voir tous les produits Alices">Je veux voir tous les produits Alices</a>
+                        </p>
                     </article>
                     <article class="row-fluid"  id="categories">
                         <div class="span4">
                         	<h4>Les grandes cat&eacute;gories de la boutique</h4>
                             <ul>
-                            	<li><img src="img/icons/adhesion.png" alt="icon adhesion"><a  href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></li>
-                                <li><img src="img/icons/culture.png" alt="icon Culture"><a  href="#" title="Culture">Culture</a></li>
-                                <li><img src="img/icons/voyages.png" alt="Voyages"><a  href="#" title="Voyages">Voyages</a></li>
-                                <li><img src="img/icons/sport_loisir_ski.png" alt="Sport / Loisirs / Ski"><a  href="#" title="Sport / Loisirs / Ski">Sport / Loisir / Ski</a></li>
-                                <li><img src="img/icons/economie.png" alt="icon economie"><a  href="#" title="Economie sociale">Economie sociale</a></li>
+                            	<li><a  href="#" title="Adh&eacute;sion"><img src="img/icons/adhesion.png" alt="icon adhesion">Adh&eacute;sion<span style="color:#8560A8;" class="icon-link"></span></a></li>
+                                <li><a  href="#" title="Culture"><img src="img/icons/culture.png" alt="icon Culture">Culture<span style="color:#D61277;" class="icon-link"></span></a></li>
+                                <li><a  href="#" title="Voyages"><img src="img/icons/voyages.png" alt="Voyages">Voyages<span style="color:#C40009;" class="icon-link"></span></a></li>
+                                <li><a  href="#" title="Sport / Loisirs / Ski"><img src="img/icons/sport_loisir_ski.png" alt="Sport / Loisirs / Ski">Sport / Loisir / Ski<span style="color:#ED771A;" class="icon-link"></span></a></li>
+                                <li><a  href="#" title="Economie sociale"><img src="img/icons/economie.png" alt="icon economie">Economie sociale<span style="color:#467492;" class="icon-link"></span></a></li>
                             </ul>
                         </div>
-                        <aside class="span8" id="facebook">facebook
+                        <aside #fanbox class="span8" id="facebook">facebook
                         </aside>
                     </article>
 				</section>

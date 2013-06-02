@@ -190,7 +190,7 @@ body{.openregular;color:@noir;
 				li.connexion, li.accesrapid{.caps;margin-right:50px;}
 				}
 			}
-	div.wrap{width:1000px;margin:0 auto;padding:40px 3px 0 3px;
+	div.wrap{width:960px;margin:0 auto;padding:40px 3px 0 3px;
 		header{.abel;.caps;padding:32px 0 16px 0;
 				li{text-align:center;
 					a.active{border-bottom-style:solid;border-bottom-width:3px;border-bottom-color:@vert;cursor:default;
@@ -228,12 +228,13 @@ body{.openregular;color:@noir;
 					p.savoirPlus{
 							.abel;
 							font-size:125%;
+							line-height:125%;
 							position:absolute;
 							background:@gris;
 							top:496px;
 							right:0;
 							text-align:center;
-							padding:3px 5px;
+							padding:3px 15px;
 							z-index:10;
 							a{color:@blanc;
 								&:hover{color:@vert;}
@@ -250,21 +251,26 @@ body{.openregular;color:@noir;
 				}
 			article#millieu{
 				p{font-size:75%;color:@gris;overflow:hidden;
-					a{font-size:50%;
+					a{
 						&:hover{color:@vert;}
 						}
 					}
 				h4{margin-top:0;}
 				div#searchbox{.champgris;height:80px;padding:10px 15px;
-					form{width:100%;}
+					form{width:100%;
+						input{width:196px;}
+						}
 					}
 				div#inscription{border:1px @grisclair solid;margin:28.5px 0;height:140px;padding:10px 15px;
 						form{margin-bottom:0;
-						span{margin-bottom:0;}
+						span{margin-bottom:0;
+								input{width:192px;}
+							}/*span*/
 						input{box-shadow:0 0 0 4px @grismiclair;padding: 4px 6px;margin-top:4px;}
-						input#identification{border-radius:4px;width:275px;}
-						}
-					}
+						input#identification{border-radius:4px;width:260px;}
+						}/*form*/
+						p{letter-spacing:-0.5px;}
+					}/*inscription*/
 				div#ce{.champgris;height:155px;padding:10px 15px;}
 				p.savoirPlus{
 						margin:0;
@@ -273,7 +279,7 @@ body{.openregular;color:@noir;
 						font-size:125%;
 						background:@vert;
 						text-align:center;
-						padding:3px 5px;
+						padding:3px 8px;
 						z-index:10;
 						a{color:@blanc;
 							&:hover{color:@gris;}
@@ -293,7 +299,7 @@ body{.openregular;color:@noir;
 						font-size:125%;
 						background:@vert;
 						text-align:center;
-						padding:3px 5px;
+						padding:3px 8px;
 						z-index:10;
 						a{color:@blanc;
 							&:hover{color:@gris;}
@@ -313,8 +319,9 @@ body{.openregular;color:@noir;
 					}
 				}
 			}
-			article#produits{border:1px @grisclair solid;padding:0 15px;margin:30px 0;
+			article#produits{border:1px @grisclair solid;padding:0;margin:30px 0;
 				h1, h2, h3, h4{color:@vert;.abel;}
+				h4.title{padding:0 0 15px 15px;}
 				h5, h6{color:@gris;.openregular;.caps}
 				produitWrap{border:1px @grisclair solid;}
 				div#produitCarousel.carousel{margin-bottom:10px;
@@ -343,23 +350,42 @@ body{.openregular;color:@noir;
 					  }
 					}
 				}/*produitCarousel*/
-			}
-			article#categories{.abel;
-				div.span4{.champgris;padding:0 15px;
-					ul{margin-left:15px;
-						li{padding:5px	0;
-							img{margin-right:10px;}
-							a{margin-top:15px;color:@gris;font-size:125%;}
+				p.savoirPlus{
+						margin:0 -1px 0 0;;
+						width:30%;
+						.abel;
+						font-size:125%;
+						background:@vert;
+						text-align:center;
+						padding:3px 8px;
+						z-index:10;
+						a{color:@blanc;
+							&:hover{color:@gris;}
 							}
 						}
-					}
-				aside#fanbox{}
+			}/*article*/
+			article#categories{.abel;
+				div.span4{.champgris;
+					h4{padding:0 15px;}
+					ul{margin:0;
+						li{height:40px;
+							a{color:@gris;font-size:125%;line-height:150%;padding:10px 5%;width:30%;
+								&:hover{background:@blanc;
+									span{visibility:visible;}
+									}
+								img{vertical-align:middle;padding:0 10px 0 0;margin-top:-7px;}
+								span{font-size:75%;visibility:hidden;margin-left:20px;}
+								}
+							}
+						}
+					}/*div.span4*/
+				aside#fanbox.span8{}
 			}
 			
 		}
 		footer{.abel;clear:both;
 			div.row-fluid{margin-top:30px;clear:both;border-bottom-style:dashed;border-bottom-width:2px;border-bottom-color:@grisclair;border-top-style:dashed;border-top-width:2px;border-top-color:@grisclair;padding-top:10px;
-				div#sociallinks{
+				div#sociallinks.span3{width:18%;
 					ul{margin-left:0;
 						li{.iconround;
 							a{color:@blanc;}
@@ -370,11 +396,11 @@ body{.openregular;color:@noir;
 						}
 					}
 				}
-				div#credits.span9{.abel;.caps;font-size:135%;width:76.595%;margin-left:0;
+				div#credits.span9{.abel;.caps;font-size:135%;width:81.595%;margin-left:0;
 					ul{
 						li{line-height:175%;color:@grismiclair;
-							a{color:@grismiclair;
-								&:hover{color:@gris;line-height:200%;border-top-style:solid;border-top-width:3px;border-top-color:@vert;}
+							a{color:@grismiclair;padding-left:2px;padding-right:2px;
+								&:hover{color:@gris;background:lighten(@vert, 20%);}
 							}
 						}
 					}
@@ -385,10 +411,16 @@ body{.openregular;color:@noir;
 			}
 			table{
 				thead{
-					h3{margin:0;line-height:100%;}
+					h3{margin:0;line-height:100%;
+						a{
+							&:hover{color:@vert;}
+							}
+						}
 					}
 				tbody{font-size:115%;
-					a{color:@gris;}
+					a{color:@gris;
+						&:hover{background:lighten(@vert, 20%);}
+						}
 					}
 				
 				}

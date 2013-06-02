@@ -12,7 +12,7 @@ $( document ).ready(function() {
 		$('.scroll-pane').jScrollPane();
 	});
 	//scroll-pane correction
-	$('.scroll-pane').css('width', '288px');
-	$('.jspContainer').css('width', '288px');
+	$('.scroll-pane').css('width', '274px');
+	$('.jspContainer').css('width', '274px');
 	
 });
