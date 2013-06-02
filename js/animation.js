@@ -2,7 +2,7 @@
 $( document ).ready(function() {
 	//activation plugs
 	$('#actusCarousel').carousel({
-		interval: 6000
+		interval: 15000
 		});
 	$('#produitCarousel').carousel({
 		interval: 10000
