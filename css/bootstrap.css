@@ -1107,8 +1107,10 @@ body div.wrap section#principale article#gauche div#actusCarousel div.carousel-i
 body div.wrap section#principale article#gauche div#actusCarousel div.carousel-inner div.item p{padding-left:10px;padding-right:10px;line-height:125%;}
 body div.wrap section#principale article#millieu{}body div.wrap section#principale article#millieu p{font-size:75%;color:#6d6e71;overflow:hidden;}body div.wrap section#principale article#millieu p a:hover{color:#acc92f;}
 body div.wrap section#principale article#millieu h4{margin-top:0;}
-body div.wrap section#principale article#millieu div#searchbox{background:#e2e2e2;height:80px;padding:10px 15px;}body div.wrap section#principale article#millieu div#searchbox form{width:100%;}body div.wrap section#principale article#millieu div#searchbox form input{width:196px;}
-body div.wrap section#principale article#millieu div#inscription{border:1px #e2e2e2 solid;margin:28.5px 0;height:140px;padding:10px 15px;}body div.wrap section#principale article#millieu div#inscription form{margin-bottom:0;}body div.wrap section#principale article#millieu div#inscription form span{margin-bottom:0;}body div.wrap section#principale article#millieu div#inscription form span input{width:192px;}
+body div.wrap section#principale article#millieu div#searchbox{background:#e2e2e2;height:80px;padding:10px 15px;}body div.wrap section#principale article#millieu div#searchbox form{width:100%;}body div.wrap section#principale article#millieu div#searchbox form button.btn{text-shadow:none;}
+body div.wrap section#principale article#millieu div#searchbox form input{width:196px;}
+body div.wrap section#principale article#millieu div#inscription{border:1px #e2e2e2 solid;margin:28.5px 0;height:140px;padding:10px 15px;}body div.wrap section#principale article#millieu div#inscription form{margin-bottom:0;}body div.wrap section#principale article#millieu div#inscription form span{margin-bottom:0;}body div.wrap section#principale article#millieu div#inscription form span input{width:196px;}
+body div.wrap section#principale article#millieu div#inscription form span button.btn{font-family:abelregular;font-variant:small-caps;text-shadow:none;}
 body div.wrap section#principale article#millieu div#inscription form input{box-shadow:0 0 0 4px #c2c2c2;padding:4px 6px;margin-top:4px;}
 body div.wrap section#principale article#millieu div#inscription form input#identification{border-radius:4px;width:260px;}
 body div.wrap section#principale article#millieu div#inscription p{letter-spacing:-0.5px;}
