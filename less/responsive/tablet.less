@@ -20,9 +20,10 @@ body div.wrap header{padding-top:5px;
 		li.offset1{margin-left:0;}
 		li.span2, li.span2{width:23.404255319148934%;*width:23.351063829787233%;
 			a{font-size:125%;background:lighten(@vert, 20%);padding:5px 10px;.radiusMedium;
-				&:hover{background:darken(@vert, 20%);}
+				&:hover{background:darken(@vert, 10%);color:@blanc;}
 				}
-			a.active{background:transparent;border-radius:0;border:none;
+			a.active{color:@blanc;background:darken(@vert, 10%);border:none;
+				&:hover{color:@blanc;background:darken(@vert, 10%);}
 				}
 			a.pull-left{float:none;}
 			span.pull-left{float:right;margin-right:30px;}

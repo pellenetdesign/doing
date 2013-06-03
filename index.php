@@ -46,7 +46,7 @@
 							</a>
 							<img src="img/icons/icon-info.png" alt="information">
 						</li>
-                    <li class="span2 connexion"><a href="#">Connexion</a> <img src="img/icons/icon-user.png" alt="connexion"></li>
+                    <li class="span2 connexion hidden-phone"><a href="#">Connexion</a> <img src="img/icons/icon-user.png" alt="connexion"></li>
 				</ul>
 			</nav>
 			<div class="wrap">
@@ -75,7 +75,7 @@
                 </header>
 				<section id="principale">
                     <div class="row-fluid">
-                        <article class="span4 ttTop" id="gauche">
+                        <article class="span4 ttTop hidden-phone" id="gauche">
 							<div id="actusCarousel" class="carousel slides carousel-fade">
                                 <ol class="carousel-indicators">
                                 <li data-target="#actusCarousel" data-slide-to="0" class="first"></li>
@@ -395,7 +395,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                         	<a href="#" title="Je veux voir tous les produits Alices">Je veux voir tous les produits Alices</a>
                         </p>
                     </article>
-                    <article class="row-fluid ttTop"  id="categories">
+                    <article class="row-fluid ttTop hidden-phone"  id="categories">
                         <div class="span4">
                         	<h4>Les grandes cat&eacute;gories de la boutique</h4>
                             <ul>
@@ -440,7 +440,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                     </aside>
                     <div class="ttTop" id="footernav">
                     	<span>
-                        	<h3 class="pull-left"><a href="#" title="Boutique">Boutique</a></h3>
+                        	<h3><a href="#" title="Boutique">Boutique</a></h3>
                             <ul>
                                 <li><a href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></li>
                                 <li><a href="#" title="Culture">Culture</a></li>
