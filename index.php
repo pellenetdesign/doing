@@ -440,17 +440,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                     </aside>
                     <div class="ttTop" id="footernav">
                     	<span>
-                        	<h3><a href="#" title="Boutique">Boutique</a></h3>
+                        	<h3 class="pull-left"><a href="#" title="Boutique">Boutique</a></h3>
                             <ul>
                                 <li><a href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></li>
                                 <li><a href="#" title="Culture">Culture</a></li>
                                 <li><a href="#" title="Voyages">Voyages</a></li>
                                 <li><a href="#" title="Sports / Loisirs / Ski">Sports / Loisirs / Ski</a></li>
                                 <li><a href="#" title="Economie sociale">Economie sociale</a></li>
-                                <li><a href="#" title="Title"></a></li>
-                                <li><a href="#" title="Title"></a></li>
-                                <li><a href="#" title="Title"></a></li>
-                                <li><a href="#" title="Title"></a></li>
                             </ul>
                         </span>
                     	<span>
@@ -464,7 +460,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Abonnement Presse">Abonnement Presse</a></li>
                                 <li><a href="#" title="Programmation spectacles">Programmation spectacles</a></li>
                                 <li><a href="#" title="Spectacle de No&euml;l">Spectacle de No&euml;l</a></li>
-                                <li><a href="#" title="Title"></a></li>
                             </ul>
                         </span>
                     	<span>
@@ -475,10 +470,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Vacances jeunes">Vacances jeunes</a></li>
                                 <li><a href="#" title="Sortir">Sortir</a></li>
                                 <li><a href="#" title="Demande de devis groupe">Demande de devis groupe</a></li>
-                                <li><a href="#" title="Title"></a></li>
-                                <li><a href="#" title="Title"></a></li>
-                                <li><a href="#" title="Title"></a></li>
-                                <li><a href="#" title="Title"></a></li>
                             </ul>
                         </span>
                     	<span>
@@ -506,7 +497,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Epargne solidaire">Epargne solidaire</a></li>
                                 <li><a href="#" title="Des services, des partenaires">Des services, des partenaires</a></li>
                                 <li><a href="#" title="Un assemblier pour les CE">Un assemblier pour les CE</a></li>
-                                <li><a href="#" title="Title"></a></li>
                             </ul>
                         </span>
                     </div>
