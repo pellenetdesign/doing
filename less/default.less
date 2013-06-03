@@ -207,8 +207,8 @@ body{.openregular;color:@noir;
 						}
 					img{margin:-10px 0 0 10px;}
 					}	
-				li.connexion.span2, li.accesrapide.span3{.caps;margin-left:0;}
-				li.accesrapide.span3{width:22.404255319148934%;*width:22	.351063829787233%;}
+				li.connexion.span2, li.accesrapide.span3{.caps;}
+				li.connexion.span2{margin-left:0.5%;}
 				}
 			}
 	div.wrap{width:960px;margin:0 auto;padding:40px 3px 0 3px;
@@ -312,8 +312,8 @@ body{.openregular;color:@noir;
 			article#droite{
 					p{font-size:75%;color:@gris;overflow:hidden;}
 					h4{margin-top:0;}
-				div#alices{padding:10px 15px;border:1px @grisclair solid;height:288px;overflow:auto;
-					}
+				div#alices{padding:10px 15px;border:1px @grisclair solid;height:288px;overflow:auto;}
+				.scroll-pane.jspScrollable{width:274px;}
 				div#particulier{.champgris;height:155px;padding:10px 15px;margin-top:29px;}
 				p.savoirPlus{
 						margin:0;
@@ -406,7 +406,7 @@ body{.openregular;color:@noir;
 			}
 			
 		}
-		footer{.abel;clear:both;
+		footer{.abel;margin-bottom:60px;
 			div.row-fluid{margin-top:30px;clear:both;border-bottom-style:dashed;border-bottom-width:2px;border-bottom-color:@grisclair;border-top-style:dashed;border-top-width:2px;border-top-color:@grisclair;padding-top:10px;
 				div#sociallinks.span3{width:18%;
 					ul{margin-left:0;
@@ -432,23 +432,25 @@ body{.openregular;color:@noir;
 			aside{text-align:center;margin:15px;
 				img{width:32px;margin:0 auto;height:35px;}
 			}
-			table{
-				thead{
-					h3{margin:0;line-height:100%;
+			div#footernav{background:transparent;width:100%;
+				span{width:18%;margin-left:1.9%;float:left;
+					h3{line-height:100%;font-size:125%;line-height:100%;margin-bottom:5px;
 						a{
 							&:hover{color:@vert;}
+						}
+					}
+					ul{margin:0;
+						li{
+							a{font-size:100%;line-height:100%;color:@gris;
+								&:hover{background:lighten(@vert, 20%);}
 							}
 						}
 					}
-				tbody{font-size:115%;
-					a{color:@gris;
-						&:hover{background:lighten(@vert, 20%);}
-						}
-					}
-				
-				}
-			}	
-		}
+						
+				}/*span*/
+			}/*div*/
+		}	
+	}
 }
 
 
@@ -456,7 +458,19 @@ body{.openregular;color:@noir;
 
 
 
-/*-------------------------------------------------------------------------*/
+/*---------------------------------@media styles----------------------------------------*/
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 1023px) {@import "responsive/desktop.less";}
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) {@import "responsive/tablet.less";}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {@import "responsive/phone.less";}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {@import "responsive/smallphone.less";}
 
 
 

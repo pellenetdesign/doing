@@ -19,9 +19,9 @@
     	</head>
 		<body>
 			<nav class="navbar-fixed-top">
-            	<ul class="row-fluid">
-					<li class="span6 offset1"><a href="#">Les loisirs à la carte, l’inter-CE à votre service</a></li>
-					 <li class="span3 dropdown accesrapide">
+            	<ul>
+					<li class="span6"><a href="#">Les loisirs à la carte, l’inter-CE à votre service</a></li>
+					 <li class="span3 offset1 dropdown accesrapide">
 							<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="index.php">
 								Acc&egrave;s rapide
 								<span class="icons">&#xf078;</span>
@@ -53,7 +53,10 @@
             	<header>
                 	<ul class="row-fluid ttTop">
                     	<li class="span3">
-                        	<a title="Retour page d'accueil" href="index.php"><img src="img/logos/logoAlices.png" alt="logo alices"></a>
+                        	<a title="Retour page d'accueil" href="index.php">
+                            	<img class="visible-desktop" src="img/logos/logoAlicesDesktop.png" alt="logo alices">
+                                <img class="hidden-desktop" src="img/logos/logoAlicesTablet.png" alt="logo alices">
+                            </a>
                         </li>
                         <li class="span2 offset1">
                         	<a class="active" href="#" title="Boutique">Boutique</a>
@@ -123,7 +126,69 @@ Il sera notamment en concert dans plusieurs villes de France.
                                 <a class="carousel-control right" href="#actusCarousel" data-slide="next">&rsaquo;</a>-->
                                 </div>
                         </article>
-                        <article class="span4 ttTop" id="millieu">
+                       <div class="hidden-desktop  span8 row-fluid"> <!--#droite Visible PHONE+TABLET seulement, changement de place en 768px-->
+                            <article class="span12 ttTop hidden-desktop" id="droite">
+                               <div id="alices" class="scroll-pane">
+                                        <h4>Alices</h4>
+                                        <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+                Lorem ipsum dolor sit amet.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque dapibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
+                Lorem ipsum dolor sit amet.
+                                        </p>
+                                </div><!-- end #alices-->
+                                  <div id="searchbox">
+                                <h4>Rechercher dans la boutique</h4>
+                                <form class="input-append">
+                                    <input id="appendedInputButton search" type="text" placeholder="ex : forfait isola 2000, florence foresti, ...">
+                                    <button class="btn icons" type="button">&#xf002;</button>
+                                </form>  
+                            </div>
+                            </article>
+                             <article class="span12 ttTop" id="millieu">
+                              <div id="particulier">
+                                <h4>Vous êtes un particulier</h4>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
+                                </p>
+                                </div>
+                                <p class="savoirPlus pull-right">
+                                    <a href="#" title="en savoir +">Je veux en savoir +</a>
+                                </p>      
+                            <div id="ce">
+                                <h4>Vous &ecirc;tes un Comit&eacute; d’entreprise</h4>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                </p>
+                            </div>
+                            <p class="savoirPlus pull-right">
+                                <a href="#" title="en savoir +">Je veux en savoir +</a>
+                            </p>       
+                            </article>
+                        </div><!--end #Millieu Visible PHONE+TABLET seulement-->
+                        <article class="span4 ttTop visible-desktop" id="millieu">
                         <div id="searchbox">
                         	<h4>Rechercher dans la boutique</h4>
 							<form class="input-append">
@@ -154,8 +219,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						<p class="savoirPlus pull-right">
 							<a href="#" title="en savoir +">Je veux en savoir +</a>
 						</p>       
-                        </article>
-                        <article class="span4 ttTop" id="droite">
+                        </article><!--#Millieu Visible desktop seulement-->
+                        <article class="span4 ttTop visible-desktop" id="droite">
                      	   <div id="alices" class="scroll-pane">
                                     <h4>Alices</h4>
                                     <p>
@@ -184,7 +249,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. 
             Lorem ipsum dolor sit amet.
                                     </p>
-                            </div><!--end #alices-->
+                            </div><!-- end #alices-->
                             <div id="particulier">
                             <h4>Vous êtes un particulier</h4>
                             <p>
@@ -195,8 +260,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
 							<p class="savoirPlus pull-right">
 								<a href="#" title="en savoir +">Je veux en savoir +</a>
 							</p>      
-                        </article>
-                    </div>
+                        </article><!--end #droite Visible desktop seulement-->
+                    </div><!--end row fluid-->
 				</section>
                 <section id="secondaire">
                 	<article class="ttTop" id="rubriques">
@@ -345,128 +410,107 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                         </aside>
                     </article>
 				</section>
-				<footer class="ttTop">
+				<footer>
                     <div class="row-fluid">
                         <div class="span3 icons" id="sociallinks">
-                        	<ul class="row-fluid">
+                        	<ul class="row-fluid ttTop">
                             	<li class="span2"><a href="#" title="Facebook">&#xf09a;</a></li>
                                 <li class="span2"><a href="#" title="Twitter">&#xf099;</a></li>
-                                <li class="span2"><a href="#" title="Google+">&#xf0d5;</a></li>
-                                <li class="span2"><a href="#" title="E-courrier">&#xf0e0;</a></li>
-                                <li class="span2"><a href="#" title="Pinterest">&#xf0d2;</a></li>
+                                <li class="span2"><a  href="#" title="Google+">&#xf0d5;</a></li>
+                                <li class="span2"><a  href="#" title="E-courrier">&#xf0e0;</a></li>
+                                <li class="span2"><a  href="#" title="Pinterest">&#xf0d2;</a></li>
                             </ul>
                         </div>
                         <div class="span9" id="credits">
-                        	<ul>
-                                <li class="pull-right"><a href="#" title="Doing.fr">Conception doing : cr&eacute;ation de site internet &agrave; Saint-etienne</a></li>
-                                <li class="pull-right espace">-</li>
-                                <li class="pull-right"><a href="#" title="Plan du site">Plan du site</a></li>
-                                <li class="pull-right espace">-</li>
-                                <li class="pull-right"><a href="#" title="Mentions l&eacute;gales">Mentions l&eacute;gales</a></li>
-                                <li class="pull-right espace">-</li>
-                                <li class="pull-right"><a href="#" title="Boutique"> Boutique</a></li>
-                                <li class="pull-right espace">-</li>
-                            	<li class="pull-right"><a href="#" title="Accueil">Accueil</a></li>
+                        	<ul class="ttTop">
+                            	<li class="pull-left"><a href="#" title="Accueil">Accueil</a></li>
+                                <li class="pull-left espace visible-desktop">-</li>
+                                <li class="pull-left"><a href="#" title="Boutique"> Boutique</a></li>
+                                <li class="pull-left espace visible-desktop">-</li>
+                                <li class="pull-left"><a href="#" title="Mentions l&eacute;gales">Mentions l&eacute;gales</a></li>
+                                <li class="pull-left espace visible-desktop">-</li>
+                                <li class="pull-left"><a href="#" title="Plan du site">Plan du site</a></li>
+                                <li class="pull-left espace visible-desktop">-</li>
+                                <li class="pull-left"><a href="#" title="Doing.fr">Conception doing : cr&eacute;ation de site internet &agrave; Saint-etienne</a></li>
                             </ul>
                         </div>
                     </div>
                     <aside>
                     	<img src="img/logos/papillion.png" alt="Papillion logo">
                     </aside>
-					<table class="table table-condensed">
-                    	<thead>
-                        	<tr>
-                            	<th><a href="#" title="Boutique"><h3>Boutique</h3></a></th>
-                                <th><a href="#" title="Culture"><h3>Culture</a></h3></th>
-                                <th><a href="#" title="Voyages"><h3>Voyages</a></h3></th>
-                                <th><a href="#" title="Sports / loisirs / ski"><h3>Sports / loisirs / ski</a></h3></th>
-                                <th><a href="#" title="Economie sociale"><h3>Economie sociale</a></h3></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        	<tr>
-                            	<td><a href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></td>
-                                <td><a href="#" title="Actions Culturelles">Actions Culturelles</a></td>
-                                <td><a href="#" title="Devis vols secs">Devis vols secs</a></td>
-                                <td><a href="#" title="Ski">Ski</a></td>
-                                <td><a href="#" title="D&eacute;veloppement durable">D&eacute;veloppement durable</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                            <tr>
-                            	<td><a href="#" title="Culture">Culture</a></td>
-                                <td><a href="#" title="Musique / Th&eacute;&acirc;tre / Danse">Musique / Th&eacute;&acirc;tre / Danse</a></td>
-                                <td><a href="#" title="Locations">Locations</a></td>
-                                <td><a href="#" title="Sport">Sport</a></td>
-                                <td><a href="#" title="D&eacute;veloppement solidaire">D&eacute;veloppement solidaire</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                           	</tr>
-                            <tr>
-                            	<td><a href="#" title="Voyages">Voyages</a></td>
-                                <td><a href="#" title="Cin&eacute;ma">Cin&eacute;ma</a></td>
-                                <td><a href="#" title="Vacances jeunes">Vacances jeunes</a></td>
-                                <td><a href="#" title="Parcs d'attractions">Parcs d'attractions</a></td>
-                                <td><a href="#" title="Nos engagements">Nos engagements</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                            <tr>
-                            	<td><a href="#" title="Sports / Loisirs / Ski">Sports / Loisirs / Ski</a></td>
-                                <td><a href="#" title="Festivals">Festivals</a></td>
-                                <td><a href="#" title="Sortir">Sortir</a></td>
-                                <td><a href="#" title="Balades touristiques">Balades touristiques</a></td>
-                                <td><a href="#" title="Achats responsable">Achats responsable</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                            <tr>
-                            	<td><a href="#" title="Economie sociale">Economie sociale</a></td>
-                                <td><a href="#" title="Mus&eacute;es - Conf&eacute;rences">Mus&eacute;es - Conf&eacute;rences</a></td>
-                                <td><a href="#" title="Demande de devis groupe">Demande de devis groupe</a></td>
-                                <td><a href="#" title="Parcs animaliers">Parcs animaliers</a></td>
-                                <td><a href="#" title="Tourisme solidare">Tourisme solidare</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                             <tr>
-                            	<td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Abonnement Presse">Abonnement Presse</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Parcs aquatics et piscine">Parcs aquatics et piscine</a></td>
-                                <td><a href="#" title="Epargne solidaire">Epargne solidaire</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                              <tr>
-                            	<td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Programmation spectacles">Programmation spectacles</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Loisir sportifs">Loisir sportifs</a></td>
-                                <td><a href="#" title="Des services, des partenaires">Des services, des partenaires</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                              <tr>
-                            	<td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Spectacle de No&euml;l">Spectacle de No&euml;l</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Les loisirs dans la boutique">Les loisirs dans la boutique</a></td>
-                                <td><a href="#" title="Un assemblier pour les CE">Un assemblier pour les CE</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                              <tr>
-                            	<td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title="Le sport dans la boutique">Le sport dans la boutique</a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                                <td><a href="#" title=""></a></td>
-                            </tr>
-                        </tbody>
-					</table>
+                    <div class="ttTop" id="footernav">
+                    	<span>
+                        	<h3><a href="#" title="Boutique">Boutique</a></h3>
+                            <ul>
+                                <li><a href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></li>
+                                <li><a href="#" title="Culture">Culture</a></li>
+                                <li><a href="#" title="Voyages">Voyages</a></li>
+                                <li><a href="#" title="Sports / Loisirs / Ski">Sports / Loisirs / Ski</a></li>
+                                <li><a href="#" title="Economie sociale">Economie sociale</a></li>
+                                <li><a href="#" title="Title"></a></li>
+                                <li><a href="#" title="Title"></a></li>
+                                <li><a href="#" title="Title"></a></li>
+                                <li><a href="#" title="Title"></a></li>
+                            </ul>
+                        </span>
+                    	<span>
+                        	<h3><a href="#" title="Culture">Culture</a></h3>
+                            <ul>
+                                <li><a href="#" title="Actions Culturelles">Actions Culturelles</a></li>
+                                <li><a href="#" title="Musique / Th&eacute;&acirc;tre / Danse">Musique / Th&eacute;&acirc;tre / Danse</a></li>
+                                <li><a href="#" title="Cin&eacute;ma">Cin&eacute;ma</a></li>
+                                <li><a href="#" title="Festivals">Festivals</a></li>
+                                <li><a href="#" title="Mus&eacute;es - Conf&eacute;rences">Mus&eacute;es - Conf&eacute;rences</a></li>
+                                <li><a href="#" title="Abonnement Presse">Abonnement Presse</a></li>
+                                <li><a href="#" title="Programmation spectacles">Programmation spectacles</a></li>
+                                <li><a href="#" title="Spectacle de No&euml;l">Spectacle de No&euml;l</a></li>
+                                <li><a href="#" title="Title"></a></li>
+                            </ul>
+                        </span>
+                    	<span>
+                        	<h3><a href="#" title="Voyages">Voyages</a></h3>
+                            <ul>
+                                <li><a href="#" title="Devis vols secs">Devis vols secs</a></li>
+                                <li><a href="#" title="Locations">Locations</a></li>
+                                <li><a href="#" title="Vacances jeunes">Vacances jeunes</a></li>
+                                <li><a href="#" title="Sortir">Sortir</a></li>
+                                <li><a href="#" title="Demande de devis groupe">Demande de devis groupe</a></li>
+                                <li><a href="#" title="Title"></a></li>
+                                <li><a href="#" title="Title"></a></li>
+                                <li><a href="#" title="Title"></a></li>
+                                <li><a href="#" title="Title"></a></li>
+                            </ul>
+                        </span>
+                    	<span>
+                        	<h3><a href="#" title="Sports / loisirs / ski">Sports / loisirs / ski</a></h3>
+                            <ul>
+                                <li><a href="#" title="Ski">Ski</a></li>
+                                <li><a href="#" title="Sport">Sport</a></li>
+                                <li><a href="#" title="Parcs d'attractions">Parcs d'attractions</a></li>
+                                <li><a href="#" title="Balades touristiques">Balades touristiques</a></li>
+                                <li><a href="#" title="Parcs animaliers">Parcs animaliers</a></li>
+                                <li><a href="#" title="Parcs aquatiques et piscine">Parcs aquatics et piscine</a></li>
+                                <li><a href="#" title="Loisir sportifs">Loisir sportifs</a></li>
+                                <li><a href="#" title="Les loisirs dans la boutique">Les loisirs dans la boutique</a></li>
+                                <li><a href="#" title="Le sport dans la boutique">Le sport dans la boutique</a></li>
+                            </ul>
+                        </span>
+                    	<span>
+                        	<h3><a href="#" title="Economie sociale">Economie sociale</a></h3>
+                            <ul>
+                                <li><a href="#" title="D&eacute;veloppement durable">D&eacute;veloppement durable</a></li>
+                                <li><a href="#" title="D&eacute;veloppement solidaire">D&eacute;veloppement solidaire</a></li>
+                                <li><a href="#" title="Nos engagements<">Nos engagements</a></li>
+                                <li><a href="#" title="Achats responsable">Achats responsable</a></li>
+                                <li><a href="#" title="Tourisme solidare">Tourisme solidare</a></li>
+                                <li><a href="#" title="Epargne solidaire">Epargne solidaire</a></li>
+                                <li><a href="#" title="Des services, des partenaires">Des services, des partenaires</a></li>
+                                <li><a href="#" title="Un assemblier pour les CE">Un assemblier pour les CE</a></li>
+                                <li><a href="#" title="Title"></a></li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
 				</footer>
 			</div><!--fin wrap-->
         <script src="js/distributions/jquery-1.10.0.min.js"></script>

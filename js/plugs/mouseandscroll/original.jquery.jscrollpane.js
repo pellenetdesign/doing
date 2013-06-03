@@ -109,7 +109,7 @@
 					pane = $('<div class="jspPane" />').css('padding', originalPadding).append(elem.children());
 					container = $('<div class="jspContainer" />')
 						.css({
-							'width': '100%',
+							'width': paneWidth + 'px',
 							'height': paneHeight + 'px'
 						}
 					).append(pane).appendTo(elem);
