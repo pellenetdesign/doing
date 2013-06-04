@@ -2,7 +2,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="robots" content="index, no-follow"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		 <title>Un travail fictif - doing.fr</title>
@@ -14,7 +13,7 @@
         <!--[if lt IE 8]>
           <script src="less/typo/font-awesome/css/font-awesome-ie7.css"></script>
 		<![endif]-->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
         <script src="js/distributions/modernizr.custom.full.min.js"></script>
     	</head>
 		<body>
@@ -22,11 +21,8 @@
             	<ul>
 					<li class="span6"><a href="#">Les loisirs à la carte, l’inter-CE à votre service</a></li>
 					 <li class="span3 offset1 dropdown accesrapide">
-							<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="index.php">
-								Acc&egrave;s rapide
-								<span class="icons">&#xf078;</span>
-							</a>
-								<ul class="dropdown-menu dropdown-menu-medium" role="menu" aria-labelledby="dLabel">
+							<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="index.php">Acc&egrave;s rapide<span class="icons">&#xf078;</span></a>
+								<ul class="dropdown-menu dropdown-menu-medium" aria-labelledby="dLabel">
 							     	<li>
 										<a href="#">Acc&egrave;s rapide Un</a>
 									</li>
@@ -43,7 +39,6 @@
 										<a href="#">Acc&egrave;s rapide Cinq</a>
 									</li>
 								</ul>
-							</a>
 							<img src="img/icons/icon-info.png" alt="information">
 						</li>
                     <li class="span2 connexion hidden-phone"><a href="#">Connexion</a> <img src="img/icons/icon-user.png" alt="connexion"></li>
@@ -127,8 +122,8 @@ Il sera notamment en concert dans plusieurs villes de France.
                                 </div>
                         </article>
                        <div class="hidden-desktop  span8 row-fluid"> <!--#droite Visible PHONE+TABLET seulement, changement de place en 768px-->
-                            <article class="span12 ttTop hidden-desktop" id="droite">
-                               <div id="alices" class="scroll-pane">
+                            <article class="span12 ttTop hidden-desktop" id="droiteBis">
+                               <div id="alicesBis" class="scroll-pane">
                                         <h4>Alices</h4>
                                         <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
@@ -157,16 +152,56 @@ Il sera notamment en concert dans plusieurs villes de France.
                 Lorem ipsum dolor sit amet.
                                         </p>
                                 </div><!-- end #alices-->
-                                  <div id="searchbox">
+                                  <div id="searchboxBis">
                                 <h4>Rechercher dans la boutique</h4>
                                 <form class="input-append">
-                                    <input id="appendedInputButton search" type="text" placeholder="ex : forfait isola 2000, florence foresti, ...">
+                                    <input id="appendedInputButtonBis" type="text" placeholder="..forfait isola 200, Florence foresti..">
                                     <button class="btn icons" type="button">&#xf002;</button>
                                 </form>  
                             </div>
                             </article>
-                             <article class="span12 ttTop" id="millieu">
-                              <div id="particulier">
+                            <article class="ttTop visible-phone" id="rubriquesPhone">
+                            <ul class="row-fluid">
+                                <li class="span2">
+                                    <img class="imgPolaroid" src="img/rubriques/sport.jpg" alt="Sport &amp; loisirs">
+                                    <a href="#" title="Sport &amp; loisirs">
+                                        <h3>Sport &amp; <br>loisirs</h3>
+                                    </a>
+                                </li>
+                                <li class="span2">
+                                    <img class="imgPolaroid" src="img/rubriques/spectacle.jpg" alt="spectacles &amp; loisirs">
+                                    <a href="#" title="spectacles &amp; loisirs">
+                                        <h3>spectacles <br>&amp; loisirs</h3>
+                                    </a>
+                                </li>
+                                <li class="span2">
+                                    <img class="imgPolaroid" src="img/rubriques/theatre.jpg" alt="Th&eacute;&acirc;tre musique/danse">
+                                    <a href="#" title="Th&eacute;&acirc;tre musique/danse">                                   
+                                    <h3>Th&eacute;&acirc;tre <br>musique / danse</h3>
+                                    </a>
+                                </li>
+                                <li class="span2">
+                                    <img class="imgPolaroid" src="img/rubriques/ski.jpg" alt="Forfait ski">
+                                    <a href="#" title="Forfait ski">
+                                        <h3>Forfait <br>ski</h3>
+                                    </a>
+                                </li>
+                                <li class="span2">
+                                    <img class="imgPolaroid" src="img/rubriques/voyages.jpg" alt="Partir en voyage">
+                                    <a href="#" title="Partir en voyage">
+                                        <h3>Partir <br>en voyage</h3>
+                                    </a>
+                                </li>
+                                <li class="span2">
+                                    <img class="imgPolaroid" src="img/rubriques/parcs.jpg" alt="Parc d'attractions">    
+                                    <a href="#" title="Parcs d'attractions">                       	
+                                        <h3>Parcs <br>d'attractions</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                   			</article>
+                             <article class="span12 ttTop" id="millieuBis">
+                              <div id="particulierBis">
                                 <h4>Vous êtes un particulier</h4>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
@@ -176,7 +211,7 @@ Il sera notamment en concert dans plusieurs villes de France.
                                 <p class="savoirPlus pull-right">
                                     <a href="#" title="en savoir +">Je veux en savoir +</a>
                                 </p>      
-                            <div id="ce">
+                            <div id="ceBis">
                                 <h4>Vous &ecirc;tes un Comit&eacute; d’entreprise</h4>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum laoreet dui rutrum mattis. Vivamus vel gravida tortor. Pellentesque pretium mattis lacus sed dapibus.
@@ -187,21 +222,22 @@ Il sera notamment en concert dans plusieurs villes de France.
                                 <a href="#" title="en savoir +">Je veux en savoir +</a>
                             </p>       
                             </article>
-                        </div><!--end #Millieu Visible PHONE+TABLET seulement-->
+                            <div class="clearfix"></div>
+                        </div><!--end #MillieuBis Visible PHONE+TABLET seulement-->
                         <article class="span4 ttTop visible-desktop" id="millieu">
                         <div id="searchbox">
                         	<h4>Rechercher dans la boutique</h4>
 							<form class="input-append">
-                                <input id="appendedInputButton search" type="text" placeholder="ex : forfait isola 2000, florence foresti, ...">
+                                <input id="appendedInputButtonBisBis" type="text" placeholder="..forfait isola 200, Florence foresti..">
                                 <button class="btn icons" type="button">&#xf002;</button>
 							</form>  
                         </div>
                         <div id="inscription">
                         	<h4>Mon espace personnel</h4>
 							<form>
-                            	<input type="text" id="identification"  placeholder="ex : forfait isola 2000, florence foresti, ...">
+                            	<input type="text" id="identification"  placeholder="..forfait isola 200, Florence foresti..">
                                 <span  class="input-append">
-                                <input id="appendedInputButton password" type="text" placeholder="mot de passe">
+                                <input id="appendedInputButtonBisBisBis" type="text" placeholder="mot de passe">
                                 <button class="btn icons" type="button">ok</button>
                                 </span>
 							</form>  
@@ -264,7 +300,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                     </div><!--end row fluid-->
 				</section>
                 <section id="secondaire">
-                	<article class="ttTop" id="rubriques">
+                	<article class="ttTop hidden-phone" id="rubriques">
                     	<ul class="row-fluid">
                         	<li class="span2">
 								<img src="img/rubriques/sport.jpg" alt="Sport &amp; loisirs">
@@ -317,22 +353,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <div class="active item row-fluid">
                                     <div class="span10 row-fluid offset1">
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book1.jpg" align="produit">
+                                            <img src="img/slides/produits/book1.jpg" alt="produit">
                                             <h4>Asaf Avidan</h4>
                                             <h5>Concert Pop / Rock</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book2.jpg" align="produit">
+                                            <img src="img/slides/produits/book2.jpg" alt="produit">
                                             <h4>L'empereur Jade</h4>
                                             <h5>Cirque / Contemporain</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book3.jpg" align="produit">
+                                            <img src="img/slides/produits/book3.jpg" alt="produit">
                                             <h4>Dynamo Atelier enfant 5/7 ans</h4>
                                             <h5>Musee / Exposition</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book4.jpg" align="produit">
+                                            <img src="img/slides/produits/book4.jpg" alt="produit">
                                             <h4>Robert alagna &amp; big band</h4>
                                             <h5>Opera / Classique</h5>
                                         </a>
@@ -341,22 +377,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                   <div class="item row-fluid">
                                     <div class="span10 row-fluid offset1">
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book1.jpg" align="produit">
+                                            <img src="img/slides/produits/book1.jpg" alt="produit">
                                             <h4>Asaf Avidan</h4>
                                             <h5>Concert Pop / Rock</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book2.jpg" align="produit">
+                                            <img src="img/slides/produits/book2.jpg" alt="produit">
                                             <h4>L'empereur Jade</h4>
                                             <h5>Cirque / Contemporain</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book3.jpg" align="produit">
+                                            <img src="img/slides/produits/book3.jpg" alt="produit">
                                             <h4>Dynamo Atelier enfant 5/7 ans</h4>
                                             <h5>Musee / Exposition</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book4.jpg" align="produit">
+                                            <img src="img/slides/produits/book4.jpg" alt="produit">
                                             <h4>Robert alagna &amp; big band</h4>
                                             <h5>Opera / Classique</h5>
                                         </a>
@@ -365,22 +401,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                   <div class="item row-fluid">
                                     <div class="span10 row-fluid offset1">
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book1.jpg" align="produit">
+                                            <img src="img/slides/produits/book1.jpg" alt="produit">
                                             <h4>Asaf Avidan</h4>
                                             <h5>Concert Pop / Rock</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book2.jpg" align="produit">
+                                            <img src="img/slides/produits/book2.jpg" alt="produit">
                                             <h4>L'empereur Jade</h4>
                                             <h5>Cirque / Contemporain</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book3.jpg" align="produit">
+                                            <img src="img/slides/produits/book3.jpg" alt="produit">
                                             <h4>Dynamo Atelier enfant 5/7 ans</h4>
                                             <h5>Musee / Exposition</h5>
                                         </a>
                                         <a class="span3" href="#" title="Produit">
-                                            <img src="img/slides/produits/book4.jpg" align="produit">
+                                            <img src="img/slides/produits/book4.jpg" alt="produit">
                                             <h4>Robert alagna &amp; big band</h4>
                                             <h5>Opera / Classique</h5>
                                         </a>
@@ -406,7 +442,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a  href="#" title="Economie sociale"><img src="img/icons/economie.png" alt="icon economie">Economie sociale<span style="color:#467492;" class="icon-link"></span></a></li>
                             </ul>
                         </div>
-                        <aside #fanbox class="span8" id="facebook">facebook
+                        <aside class="span8" id="facebook">facebook
                         </aside>
                     </article>
 				</section>
@@ -439,8 +475,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                     	<img src="img/logos/papillion.png" alt="Papillion logo">
                     </aside>
                     <div class="ttTop" id="footernav">
-                    	<span>
-                        	<h3><a href="#" title="Boutique">Boutique</a></h3>
+                    	<div>
+                        	<span><a href="#" title="Boutique">Boutique</a></span>
                             <ul>
                                 <li><a href="#" title="Adh&eacute;sion">Adh&eacute;sion</a></li>
                                 <li><a href="#" title="Culture">Culture</a></li>
@@ -448,9 +484,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Sports / Loisirs / Ski">Sports / Loisirs / Ski</a></li>
                                 <li><a href="#" title="Economie sociale">Economie sociale</a></li>
                             </ul>
-                        </span>
-                    	<span>
-                        	<h3><a href="#" title="Culture">Culture</a></h3>
+                        </div>
+                    	<div>
+                        	<span><a href="#" title="Culture">Culture</a></span>
                             <ul>
                                 <li><a href="#" title="Actions Culturelles">Actions Culturelles</a></li>
                                 <li><a href="#" title="Musique / Th&eacute;&acirc;tre / Danse">Musique / Th&eacute;&acirc;tre / Danse</a></li>
@@ -461,9 +497,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Programmation spectacles">Programmation spectacles</a></li>
                                 <li><a href="#" title="Spectacle de No&euml;l">Spectacle de No&euml;l</a></li>
                             </ul>
-                        </span>
-                    	<span>
-                        	<h3><a href="#" title="Voyages">Voyages</a></h3>
+                        </div>
+                    	<div>
+                        	<span><a href="#" title="Voyages">Voyages</a></span>
                             <ul>
                                 <li><a href="#" title="Devis vols secs">Devis vols secs</a></li>
                                 <li><a href="#" title="Locations">Locations</a></li>
@@ -471,9 +507,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Sortir">Sortir</a></li>
                                 <li><a href="#" title="Demande de devis groupe">Demande de devis groupe</a></li>
                             </ul>
-                        </span>
-                    	<span>
-                        	<h3><a href="#" title="Sports / loisirs / ski">Sports / loisirs / ski</a></h3>
+                        </div>
+                    	<div>
+                        	<span><a href="#" title="Sports / loisirs / ski">Sports / loisirs / ski</a></span>
                             <ul>
                                 <li><a href="#" title="Ski">Ski</a></li>
                                 <li><a href="#" title="Sport">Sport</a></li>
@@ -485,9 +521,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Les loisirs dans la boutique">Les loisirs dans la boutique</a></li>
                                 <li><a href="#" title="Le sport dans la boutique">Le sport dans la boutique</a></li>
                             </ul>
-                        </span>
-                    	<span>
-                        	<h3><a href="#" title="Economie sociale">Economie sociale</a></h3>
+                        </div>
+                    	<div>
+                        	<span><a href="#" title="Economie sociale">Economie sociale</a></span>
                             <ul>
                                 <li><a href="#" title="D&eacute;veloppement durable">D&eacute;veloppement durable</a></li>
                                 <li><a href="#" title="D&eacute;veloppement solidaire">D&eacute;veloppement solidaire</a></li>
@@ -498,7 +534,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum.
                                 <li><a href="#" title="Des services, des partenaires">Des services, des partenaires</a></li>
                                 <li><a href="#" title="Un assemblier pour les CE">Un assemblier pour les CE</a></li>
                             </ul>
-                        </span>
+                        </div>
                     </div>
                     <div class="clearfix"></div>
 				</footer>

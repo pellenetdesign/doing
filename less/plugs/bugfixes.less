@@ -1,201 +1,4 @@
-/*Mes styles*/
-
-/*variables*/
-
-/*couleurs*/
-@vert: #acc92f;
-@noir: #000000;
-@gris: #6d6e71;
-@grisclair: #e2e2e2;
-@grismiclair: #c2c2c2;
-@blanc :#ffffff;
-
-/*
-Font-Faces
-    font-family: 'abelregular';
-    font-family: 'openlight';
-    font-family: 'openregular';
-    font-family: 'openbold';
-	font-family: 'FontAwesome';
-*/
-
-/*Polices*/
-@caps: small-caps;
-.abel{font-family:abelregular;}
-.openlight{font-family:openlight;}
-.openregular{font-family:openregular;}
-.openbold{font-family:openbold;}
-.caps{font-variant:@caps;}
-.nocaps{font-variant:normal;}
-.icons{font-family:FontAwesome;}
-
-/*Champs*/
-.champvert{background:@vert;}
-.champgris{background:@grisclair;}
-.champsparent{background:transparent;}
-
-.champverttrans{background:url(../img/fonds/fondvert-80.png) repeat;}
-.champvertclairtrans{background:url(../img/fonds/fondvertclair-80.png) repeat;}
-.champnoirtrans{background:url(../img/fonds/fondnoir-45.png) repeat;}
-
-/*Transitions*/
-.transitionsmall{
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-.transitionNormal{
-	-webkit-transition: all 1.5s ease;
-	-moz-transition: all 1.5s ease;
-	-ms-transition: all 1.5s ease;
-	-o-transition: all 1.5s ease;
-	transition: all 1.5s ease;
-}
-.transitionLarge{
-	-webkit-transition: all 3s ease;
-	-moz-transition: all 3s ease;
-	-ms-transition: all 3s ease;
-	-o-transition: all 3s ease;
-	transition: all 3s ease;
-}
-.transitionXl{
-	-webkit-transition: all 5s ease;
-	-moz-transition: all 5s ease;
-	-ms-transition: all 5s ease;
-	-o-transition: all 5s ease;
-	transition: all 5s ease;
-}
-.transitionOpacityXl{
-	-webkit-transition: all 5s ease;
-	-moz-transition: all 5s ease;
-	-ms-transition: all 5s ease;
-	-o-transition: all 5s ease;
-	transition: all 5s ease;
-}
-/*Border-radius*/
-.iconround{border-radius:3em;overflow:hidden;background:@grismiclair;height:0.75em;width:1.7em;text-align:center;font-size:125%;padding-top:0.25em;}
-.radiusSmall{border-radius:2px;overflow:hidden;}
-.radiusMedium{border-radius:5px;overflow:hidden;}
-.radiusMedium{border-radius:8px;overflow:hidden;}
-.round{border-radius:150px;overflow:hidden;}
-
-/*scroll bars*/
-.scroll{overflow:scroll;}
-
-
-/*Carousel fade effect*/
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: 1.5s opacity;
-  -moz-transition-property: 1.5s opacity;
-  -o-transition-property: 1.5s opacity;
-  transition-property: 1.5s opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-/*Form styles*/
-	::-webkit-input-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
-	:-moz-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
-	::-moz-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
-	:-ms-input-placeholder {.openregular; color:@gris;background:@blanc;font-size:75%;font-style:italic;}
-	
-input, select, textarea {.openregular;}
-
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  display: inline-block;
-  height: @baseLineHeight;
-  padding: 8px 6px;
-  margin-bottom: @baseLineHeight / 2;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-  color: @gris;
-box-shadow:none;
-	border:none;
-  border-radius:4px 0 0 4px;
-  vertical-align: middle;
-  		&:focus {
-    		border-color: rgba(172, 201, 47,.8);
-    		.box-shadow(~"inset 0 2px 2px rgba(0,0,0,.075), 0 0 8px rgba(172, 201, 47,.6)");
-  }
-}
-
-
-.btn {
-    background-color: @vert;
-    background-image: none;
-    background-repeat: repeat-x;
-    border:none;
-    box-shadow: none;
-    color: @blanc;
-    font-size: 24px;
-    line-height: 20px;
-    margin-bottom: 0;
-    padding: 8px 24px;
-    text-shadow: none;
-  		&:hover, &:focus {color: darken(@vert, 10%);background-color: lighten(@vert, 20%);}
-}
-
-
-/*Tooltips*/
-
-.tooltip {font-size: 90%;line-height: 140%;letter-spacing:1px;.opacity(0);}
-.tooltip-inner {background-color: darken(@vert, 30%);border-radius:0;}
-.tooltip {
-  &.top .tooltip-arrow {border-top-color: darken(@vert, 30%);}
-  &.right .tooltip-arrow {border-right-color: darken(@vert, 30%);}
-  &.left .tooltip-arrow {border-left-color: darken(@vert, 30%);}
-  &.bottom .tooltip-arrow {border-bottom-color: darken(@vert, 30%);}
-}
-
-/*Dropdown menues*/
-.dropdown-menu{border:none;border-radius:0;.champvertclairtrans;
-	li{
-		a{color:darken(@vert, 10%);font-size:120%;
-			&:hover{background:lighten(@vert, 40%);color:@gris;}
-			}
-		}
-	}
-.dropdown-menu-medium{width:200px;border:@vert 3px solid;margin-left:5px;margin-right:5px;}
-
-/*img styles*/
-.imgPolaroid{
-	box-shadow:0 0 0 1px lighten(@noir, 70%), 0 0 0 3px @blanc, 0 10px 4px -4px darken(@vert, 20%);
-}
-
-/*fin variables*/
+/*Mes bugfixes*/
 
 /*Omni-styles*/
 
@@ -283,7 +86,7 @@ body{.openregular;color:@noir;
 						}
 					}
 				h4{margin-top:0;}
-				div#searchbox{.champgris;height:80px;padding:10px 15px;
+				div#searchboxBis{.champgris;height:80px;padding:10px 15px;
 					form{width:100%;
 						button.btn{text-shadow:none;}
 						input{width:196px;}
@@ -300,7 +103,7 @@ body{.openregular;color:@noir;
 						}/*form*/
 						p{letter-spacing:-0.5px;}
 					}/*inscription*/
-				div#ce{.champgris;height:155px;padding:10px 15px;}
+				div#ceBis{.champgris;height:155px;padding:10px 15px;}
 				p.savoirPlus{
 						margin:0;
 						.abel;
@@ -315,12 +118,12 @@ body{.openregular;color:@noir;
 							}
 						}
 				}
-			article#droite{
+			article#droiteBis{
 					p{font-size:75%;color:@gris;overflow:hidden;}
 					h4{margin-top:0;}
-				div#alices{padding:10px 15px;border:1px @grisclair solid;height:288px;overflow:auto;}
+				div#alicesBis{padding:10px 15px;border:1px @grisclair solid;height:288px;overflow:auto;}
 				.scroll-pane.jspScrollable{width:274px;}
-				div#particulier{.champgris;height:155px;padding:10px 15px;margin-top:29px;}
+				div#particulierBis{.champgris;height:155px;padding:10px 15px;margin-top:29px;}
 				p.savoirPlus{
 						margin:0;
 						.abel;
@@ -439,8 +242,8 @@ body{.openregular;color:@noir;
 				img{width:32px;margin:0 auto;height:35px;}
 			}
 			div#footernav{background:transparent;width:100%;
-				div{width:18%;margin-left:1.9%;float:left;
-					span{line-height:100%;font-size:115%;line-height:100%;margin-bottom:5px;.abel;.caps;width:100%;margin-left:0;
+				span{width:18%;margin-left:1.9%;float:left;
+					h3{line-height:100%;font-size:125%;line-height:100%;margin-bottom:5px;
 						a{
 							&:hover{color:@vert;}
 						}
@@ -466,10 +269,16 @@ body{.openregular;color:@noir;
 
 /*---------------------------------@media styles----------------------------------------*/
 
-
+/* Portrait tablet to landscape and desktop */
 @media (max-width: 1023px) {@import "responsive/desktop.less";}
+
+/* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {@import "responsive/tablet.less";}
+ 
+/* Landscape phone to portrait tablet */
 @media (max-width: 767px) {@import "responsive/phone.less";}
+ 
+/* Landscape phones and down */
 @media (max-width: 639px) {@import "responsive/smallphone.less";}
 
 

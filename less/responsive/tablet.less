@@ -9,6 +9,61 @@ de l'importance des priorités de l'information..
 les balises droite/millieu changent de place etc..
 -----------
 --------- */
+/*
+
+MillieuBis correction (doublage div#millieu)
+
+*/
+
+	article#millieuBis{
+		p{font-size:75%;color:@gris;overflow:hidden;
+			a{
+				&:hover{color:@vert;}
+				}
+			}
+		h4{margin-top:0;}
+		div#searchboxBis{.champgris;height:80px;padding:10px 15px;
+			form{width:100%;
+				button.btn{text-shadow:none;}
+				input{width:196px;}
+				}
+			}
+		div#inscription{border:1px @grisclair solid;margin:28.5px 0;height:140px;padding:10px 15px;
+				form{margin-bottom:0;
+				span{margin-bottom:0;
+						input{width:196px;}
+						button.btn{.abel;.caps;text-shadow:none;}
+					}/*span*/
+				input{box-shadow:0 0 0 4px @grismiclair;padding: 4px 6px;margin-top:4px;}
+				input#identification{border-radius:4px;width:260px;}
+				}/*form*/
+				p{letter-spacing:-0.5px;}
+			}/*inscription*/
+		div#ceBis{.champgris;height:155px;padding:10px 15px;}
+		p.savoirPlus{
+				margin:0;
+				.abel;
+				width:45%;
+				font-size:125%;
+				background:@vert;
+				text-align:center;
+				padding:3px 8px;
+				z-index:10;
+				a{color:@blanc;
+					&:hover{color:@gris;}
+					}
+				}
+		}
+
+
+/*
+
+Fin correction
+
+*/
+
+
+
 
 /*wrap*/
 body nav.navbar-fixed-top ul{width:730px;}
@@ -44,11 +99,11 @@ body div.wrap section#principale article#gauche{height:585px;
 		p.savoirPlus{top:578px;}
 	}
 }
-body div.wrap section#principale article#millieu.span12{margin-left:0;height:240px;
-	div#particulier{.champgris;height:100px;margin-top:0px;padding:10px 15px;
+body div.wrap section#principale article#millieuBis.span12{margin-left:0;height:240px;
+	div#particulierBis{.champgris;height:100px;margin-top:0px;padding:10px 15px;
 		h4{font-size:175%;}
 			}
-	div#ce{margin-top:35px;height:100px;
+	div#ceBis{margin-top:35px;height:100px;
 		h4{font-size:175%;}
 		}
 	p.savoirPlus{
@@ -65,10 +120,10 @@ body div.wrap section#principale article#millieu.span12{margin-left:0;height:240
 			}
 		}
 }
-body div.wrap section#principale article#droite.span12{margin-left:0;height:303px;
+body div.wrap section#principale article#droiteBis.span12{margin-left:0;height:303px;
 		h4{margin-top:0;}
-		div#alices{height:120px;font-size:120%;}
-		div#searchbox{.champgris;height:100px;padding:10px 15px;margin-top:30px;
+		div#alicesBis{height:120px;font-size:120%;}
+		div#searchboxBis{.champgris;height:100px;padding:10px 15px;margin-top:30px;
 			h4{font-size:175%;}
 			form{width:100%;margin-top:10px;
 				button.btn{text-shadow:none;}
@@ -76,13 +131,13 @@ body div.wrap section#principale article#droite.span12{margin-left:0;height:303p
 				}
 			}
 }
-body div.wrap section#principale article#droite div.scroll-pane.jspScrollable{width:449px;
+body div.wrap section#principale article#droiteBis div.scroll-pane.jspScrollable{width:449px;
 	div.jspVerticalBar{height:85px;
 		div.jspTrack{height:50px}
 		}
 	}
 
-/*millieu*/
+/*millieuBis*/
 body div.wrap section#secondaire article#rubriques{margin-top:60px;
 	ul li a{top:25px;height:85px;padding-top:10px;
 		h3{font-size:150%;}
@@ -143,8 +198,7 @@ body div.wrap footer{
 	}
 }
 body div.wrap footer div#footernav{
-	span{width:96%;margin-bottom:15px;
-		div.icon-level-down{}
+	div{width:96%;margin-bottom:15px;
 		ul{clear:both;
 			li{float:left;margin-top:10px;margin-bottom:10px;
 				a{margin-left:30px;padding:2px 5px;.champvert;border-radius:5px;font-size:125%;line-height:125%;}
